@@ -1,0 +1,29 @@
+.popularProductsConatiner {
+    max-width: 1250px;
+    margin: 0px 50px;
+}
+
+.popularProducts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.popularProduct {
+    height: auto;
+    width: 203px;
+    cursor: pointer;
+}
+
+.popularProduct > img {
+    padding: 10px;
+}
+
+.popularProduct > p {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #00000099;
+    font-size: 14px;
+    padding: 0 10px;
+    font-weight: 600;
+}
