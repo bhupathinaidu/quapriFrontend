@@ -3,13 +3,12 @@
     top: 0px;
     z-index: 1000;
     background-color: rgb(255, 255, 255);
-    padding: 0px;
-    max-width: 1250px;
-    margin: 0px 50px;
+    padding: 0px 50px;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index:99999;
 }
 
 .logoSearchContainer {
