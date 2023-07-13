@@ -11,3 +11,11 @@
     }
 
 }
+
+.searchBox {
+    display: flex;
+}
+
+.searchIcon {
+    margin-left: -20px;
+}
