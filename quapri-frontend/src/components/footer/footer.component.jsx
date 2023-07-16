@@ -11,7 +11,7 @@ const Footer = () => {
       <Row>
         <Col>
           <strong>Find Stores</strong>
-          <div class="list-group">
+          <div className="list-group">
             <Link to="#">Bangalore</Link>
             <Link to="#">Gurgoan</Link>
             <Link to="#">New Delhi</Link>
@@ -22,7 +22,7 @@ const Footer = () => {
         </Col>
         <Col>
           <strong>Our Company</strong>
-          <div class="list-group">
+          <div className="list-group">
             <Link to="#">About Us</Link>
             <Link to="#">Career</Link>
             <Link to="#">Blog</Link>
@@ -30,7 +30,7 @@ const Footer = () => {
         </Col>
         <Col>
           <strong>Find Stores</strong>
-          <div class="list-group">
+          <div className="list-group">
             <Link to="#">Help</Link>
             <Link to="#">Business Pricing</Link>
             <Link to="#">Find Stores</Link>
@@ -40,7 +40,7 @@ const Footer = () => {
         </Col>
         <Col>
           <strong>Imortant Links</strong>
-          <div class="list-group">
+          <div className="list-group">
             <Link to="#">Privacy Policy</Link>
             <Link to="#">Delivery & Return Policy</Link>
             <Link to="#">Terms & Conditions</Link>

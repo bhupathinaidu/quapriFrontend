@@ -36,7 +36,7 @@ const HomePage = () => {
           <ProductHeadingComponent heading="Popular Products" />
           <div className="popularProducts">
             {productList.map((item) => (
-              <ProductCardComponent item={item} />
+              <ProductCardComponent item={item} key={item.label} />
             ))}
           </div>
         </div>
