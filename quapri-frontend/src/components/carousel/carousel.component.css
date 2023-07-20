@@ -13,11 +13,21 @@
     background-color: #FFF;
     margin: 0px 80px;
     margin-bottom: 30px;
+    text-align: center;
+}
+
+.bgWhiteMarginNormal {
+    background-color: #FFF;
+    margin: 0px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 
-.bgWhiteMarginHigh p {
-    font-size: 11px;
+.bgWhiteMarginHigh p, .bgWhiteMarginNormal p {
+    color: #00000099;
+    font-size: 14px;
     margin: 0;
     font-weight: 600;
+    padding: 10px 0;
 }
