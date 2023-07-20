@@ -1,0 +1,9 @@
+.packageImg {
+    position: relative;
+    width: 100%;
+    object-fit: contain;
+}
+
+.packageImg img {
+    width: 100%;
+}

@@ -18,13 +18,13 @@ const NavbarComponent = () => {
           </ul>
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <span className="nav-link"> Find Quapri Store</span>
+              <span className="nav-link"> Store Locator</span>
             </li>
             <li>
               <span className="nav-link">Sample Kit</span>
             </li>
             <li>
-              <span className="nav-link businessLink">Business Pricing</span>
+              <span className="nav-link businessLink">Business Quote</span>
             </li>
           </ul>
         </Navbar.Collapse>
