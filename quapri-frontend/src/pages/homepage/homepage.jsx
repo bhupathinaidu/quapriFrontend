@@ -40,7 +40,32 @@ const HomePage = () => {
             ))}
           </div>
         </div>
-        <Container className="mt-4">
+      <div className='photoProductContainer'>
+        <ProductHeadingComponent heading="Photo Products" />
+        <CarouselComponent properties={photoProductCarousel} />
+      </div>
+      <div className='newLaunchesContainer'>
+        <ProductHeadingComponent heading="New Launches" />
+        <CarouselComponent properties={photoProductCarousel} />
+      </div>
+      <div className='corporateGiftsContainer'>
+        <ProductHeadingComponent heading="Corporate Gifts" />
+        <CarouselComponent properties={photoProductCarousel} />
+      </div>
+      <div className='stationeryContainer'>
+        <ProductHeadingComponent heading="Stationery" />
+        <CarouselComponent properties={photoProductCarousel} />
+      </div>
+      <div className='packagingContainer'>
+        <ProductHeadingComponent heading="Packaging" />
+        <CarouselComponent properties={photoProductCarousel} />
+      </div>
+      <div className='signMarketingContainer'>
+        <ProductHeadingComponent heading="Signs & Marketing" />
+        <CarouselComponent properties={photoProductCarousel} />
+      </div>
+      </div>
+      <Container className="mt-4">
           <Row className="align-items-center">
             <Col md={5} className="px-0 px-md-3">
               <div className="packageImg">
@@ -119,9 +144,8 @@ const HomePage = () => {
           </Row>
         </Container>
         <Footer />
-      </header>
-    </div>
-  );
-};
+    </header>
+  </div>)
+}
 
 export default HomePage;
