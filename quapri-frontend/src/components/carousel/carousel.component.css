@@ -15,9 +15,16 @@
     margin-bottom: 30px;
 }
 
+.bgWhiteMarginHigh .listItem {
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-align: center;
+}
 
 .bgWhiteMarginHigh p {
     font-size: 11px;
     margin: 0;
     font-weight: 600;
+    background-color: #2b2353;
+    color: #fff;
 }
