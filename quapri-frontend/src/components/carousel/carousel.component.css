@@ -38,3 +38,8 @@
     background-color: #2b2353;
     color: #fff;
 }
+@media screen and (max-width: 700px) {
+    .bgWhiteMarginHigh {
+        margin: 0 20px;
+    }
+}

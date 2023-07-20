@@ -1,19 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.component.css";
 import logo from "../../assets/quapri_logo.png";
 import SearchBoxComponent from "../searchBox/searchbox.component";
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
+import Login from "../login/login.component";
 
 const HeaderComponent = () => {
+  const [loginModalShow, setLoginModalShow] = useState(false);
   return (
     <Navbar collapseOnSelect expand="lg">
       <Container>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Brand>
           <Link to="/" className="nav-link">
-            <img className="logo" src={logo} />
+            <img className="logo" src={logo} alt="" />
           </Link>
         </Navbar.Brand>
         <div className="d-lg-none">
@@ -37,18 +39,26 @@ const HeaderComponent = () => {
               </span>
             </li>
             <li>
-              <span className="loginSignup nav-link">
-                <i className="fa fa-user"></i> Login/Sign Up
+              <span
+                className="loginSignup nav-link"
+                onClick={() => setLoginModalShow(true)}>
+                <i className="fa fa-sign-in"></i>Login
               </span>
             </li>
             <li>
               <span className="cartDesktop nav-link">
                 <i className="fa fa-shopping-cart"></i>
+                <span className="cartCounter">0</span>
               </span>
             </li>
           </ul>
         </Navbar.Collapse>
       </Container>
+      <Login
+        show={loginModalShow}
+        setLoginModalShow={setLoginModalShow}
+        onHide={() => setLoginModalShow(false)}
+      />
     </Navbar>
   );
 };
