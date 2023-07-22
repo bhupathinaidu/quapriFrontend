@@ -2,13 +2,12 @@ import React from "react";
 import "./homepage.css";
 import { useSelector } from "react-redux";
 import { currentUser } from "../../store/test/test.reducer";
-import NavbarComponent from "../../components/navbar/navbar.component";
 import HeaderComponent from "../../components/header/header.component";
-import ServiceNavbarComponent from "../../components/servicesNav/servicesNav.component";
 import CarouselComponent from "../../components/carousel/carousel.component";
 import {
   promoCarousel,
   servicesCarousel,
+  photoProductCarousel,
 } from "../../commom/carousel.constants";
 import ProductHeadingComponent from "../../components/productHeading/product.heading.component";
 import { productList } from "../../commom/product.constants";
@@ -27,9 +26,6 @@ const HomePage = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <NavbarComponent />
-        <HeaderComponent />
-        <ServiceNavbarComponent />
         <CarouselComponent properties={promoCarousel} />
         <CarouselComponent properties={servicesCarousel} />
         <div className="popularProductsConatiner">
@@ -40,32 +36,31 @@ const HomePage = () => {
             ))}
           </div>
         </div>
-      <div className='photoProductContainer'>
-        <ProductHeadingComponent heading="Photo Products" />
-        <CarouselComponent properties={photoProductCarousel} />
-      </div>
-      <div className='newLaunchesContainer'>
-        <ProductHeadingComponent heading="New Launches" />
-        <CarouselComponent properties={photoProductCarousel} />
-      </div>
-      <div className='corporateGiftsContainer'>
-        <ProductHeadingComponent heading="Corporate Gifts" />
-        <CarouselComponent properties={photoProductCarousel} />
-      </div>
-      <div className='stationeryContainer'>
-        <ProductHeadingComponent heading="Stationery" />
-        <CarouselComponent properties={photoProductCarousel} />
-      </div>
-      <div className='packagingContainer'>
-        <ProductHeadingComponent heading="Packaging" />
-        <CarouselComponent properties={photoProductCarousel} />
-      </div>
-      <div className='signMarketingContainer'>
-        <ProductHeadingComponent heading="Signs & Marketing" />
-        <CarouselComponent properties={photoProductCarousel} />
-      </div>
-      </div>
-      <Container className="mt-4">
+        <div className='photoProductContainer'>
+          <ProductHeadingComponent heading="Photo Products" />
+          <CarouselComponent properties={photoProductCarousel} />
+        </div>
+        <div className='newLaunchesContainer'>
+          <ProductHeadingComponent heading="New Launches" />
+          <CarouselComponent properties={photoProductCarousel} />
+        </div>
+        <div className='corporateGiftsContainer'>
+          <ProductHeadingComponent heading="Corporate Gifts" />
+          <CarouselComponent properties={photoProductCarousel} />
+        </div>
+        <div className='stationeryContainer'>
+          <ProductHeadingComponent heading="Stationery" />
+          <CarouselComponent properties={photoProductCarousel} />
+        </div>
+        <div className='packagingContainer'>
+          <ProductHeadingComponent heading="Packaging" />
+          <CarouselComponent properties={photoProductCarousel} />
+        </div>
+        <div className='signMarketingContainer'>
+          <ProductHeadingComponent heading="Signs & Marketing" />
+          <CarouselComponent properties={photoProductCarousel} />
+        </div>
+        <Container className="mt-4">
           <Row className="align-items-center">
             <Col md={5} className="px-0 px-md-3">
               <div className="packageImg">
@@ -143,9 +138,8 @@ const HomePage = () => {
             </Col>
           </Row>
         </Container>
-        <Footer />
-    </header>
-  </div>)
+      </header>
+    </div>)
 }
 
 export default HomePage;
