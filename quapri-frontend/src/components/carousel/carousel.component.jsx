@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./carousel.component.css";
-import testImg from "../../assets/test_img.png";
+import { Link } from "react-router-dom";
 
 const CarouselComponent = ({ properties }) => {
   const responsive = {
@@ -28,10 +28,12 @@ const CarouselComponent = ({ properties }) => {
   return (
     <Carousel responsive={responsive} containerClass={properties.classVal}>
       {properties.list.map((item) => (
-        <div className="listItem" key={item.id}>
-          <img src={item.imgSrc} alt={item.id} />
-          <p>{item.label}</p>
-        </div>
+        <Link to={item.src} key={item.id}>
+          <div className="listItem">
+            <img src={item.imgSrc} alt={item.id} />
+            <p>{item.label}</p>
+          </div>
+        </Link>
       ))}
     </Carousel>
   );
