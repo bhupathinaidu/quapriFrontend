@@ -14,7 +14,7 @@ const HeaderComponent = () => {
       <Container>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Brand>
-          <Link to="/" className="nav-link">
+          <Link to="#" className="nav-link">
             <img className="logo" src={logo} alt="" />
           </Link>
         </Navbar.Brand>

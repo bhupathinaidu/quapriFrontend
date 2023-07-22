@@ -11,7 +11,7 @@ const NavbarComponent = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/">
+              <Link className="nav-link active" aria-current="page" to="#">
                 Customer Support
               </Link>
             </li>
