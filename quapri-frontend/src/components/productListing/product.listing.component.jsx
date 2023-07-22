@@ -27,11 +27,11 @@ const ProductListingComponent = ({ properties }) => {
                 </div>
             </div>
             <div style={{ marginBottom: "30px" }} class="container productList">
-                {productList.map(item => <div>
-                    <img style={{height: "285px", width: "285px"}} src={item.imgUrl} />
+                {productList.map(item => <Link to="/same-day-delivery/customizable-products/same-day-business-cards"><div>
+                    <img style={{ height: "285px", width: "285px" }} src={item.imgUrl} />
                     <p>{item.label}</p>
                     <p>{item.price}</p>
-                </div>)}
+                </div></Link>)}
             </div>
         </div>
     )
