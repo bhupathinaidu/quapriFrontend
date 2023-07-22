@@ -67,6 +67,13 @@
     color: rgb(102, 45, 145);
 }
 
+.serviceList > li > a {
+    color: #39424e !important;
+    &:hover {
+        color: #700695 !important;
+    }
+}
+
 @media screen and (max-width: 700px) {
     .serviceNavbarWrapper {
         margin: 0;

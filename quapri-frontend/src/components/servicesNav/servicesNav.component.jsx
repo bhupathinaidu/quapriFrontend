@@ -12,13 +12,15 @@ const ServiceNavbarComponent = () => {
         <div className="serviceList">
           <div className="nav-item dropdown">
             <li>
-              <span
-                className="dropdown-toggle"
-                id="dropdownMenuButton"
-                data-mdb-toggle="dropdown"
-                aria-expanded="false">
-                Same Day Delivery
-              </span>
+              <Link to="/same-day-delivery">
+                <span
+                  className="dropdown-toggle"
+                  id="dropdownMenuButton"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false">
+                  Same Day Delivery
+                </span>
+              </Link>
             </li>
             <div
               className="dropdown-menu wt-100 mt-2 py-0"
@@ -207,13 +209,15 @@ const ServiceNavbarComponent = () => {
           </div>
           <div className="nav-item dropdown">
             <li className="dropdown">
-              <span
-                className="dropdown-toggle"
-                id="dropdownMenuButton"
-                data-mdb-toggle="dropdown"
-                aria-expanded="false">
-                Stationery
-              </span>
+              <Link to="/stationery">
+                <span
+                  className="dropdown-toggle"
+                  id="dropdownMenuButton"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false">
+                  Stationery
+                </span>
+              </Link>
             </li>
             <div
               className="dropdown-menu wt-100 mt-2 py-0"
@@ -400,13 +404,27 @@ const ServiceNavbarComponent = () => {
               </Container>
             </div>
           </div>
-          <div className="nav-item">Corporate Gifts</div>
-          <div className="nav-item">Drinkware</div>
-          <div className="nav-item">Packaging</div>
-          <div className="nav-item">Apparel</div>
-          <div className="nav-item">Signs & Marketing</div>
-          <div className="nav-item">Awards</div>
-          <div className="nav-item">Photo Gifts</div>
+          <div className="nav-item">
+            <Link to="/corporate-gifts">Corporate Gifts</Link>
+          </div>
+          <div className="nav-item">
+            <Link to="/drinkware">Drinkware</Link>
+          </div>
+          <div className="nav-item">
+            <Link to="/packaging">Packaging</Link>
+          </div>
+          <div className="nav-item">
+            <Link to="/apparel">Apparel</Link>
+          </div>
+          <div className="nav-item">
+            <Link to="/marketing">Signs & Marketing</Link>
+          </div>
+          <div className="nav-item">
+            <Link to="/awards">Awards</Link>
+          </div>
+          <div className="nav-item">
+            <Link to="/photo-gifts">Photo Gifts</Link>
+          </div>
         </div>
       </div>
     </nav>
