@@ -31,42 +31,37 @@ const ServiceNavbarComponent = () => {
                     <div className="megamenu">
                       <h6 className="megamenuHeading">
                         <Link to="#">
-                          <span role="link">Business Cards</span>
+                          <span role="link">Business Essentials</span>
                         </Link>
                       </h6>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Premium Laminated Cards
+                          Acrylic Desk Stands
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Sandwich Business Cards
+                          Business Cards
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Standard Business Cards
+                          Letterheads
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Textured Business Cards
+                          Flyers
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Spot UV Business Cards
+                          Document Printing
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Translucent Business Cards
-                        </div>
-                      </Link>
-                      <Link className="megaMenuLink" to="#">
-                        <div role="link" className="my-1">
-                          Eco-Friendly Business Cards
+                          Brochures
                         </div>
                       </Link>
                     </div>
@@ -75,42 +70,37 @@ const ServiceNavbarComponent = () => {
                     <div className="megamenu">
                       <h6 className="megamenuHeading">
                         <Link to="#">
-                          <span role="link">Business Cards</span>
+                          <span role="link">Calendars & Diaries</span>
                         </Link>
                       </h6>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Premium Laminated Cards
+                          Wiro Diaries
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Sandwich Business Cards
+                          Desk Calendars
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Standard Business Cards
+                          Wall Calendar
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Textured Business Cards
+                          Poster Calendar
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Spot UV Business Cards
+                          Bookmark Calendars
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Translucent Business Cards
-                        </div>
-                      </Link>
-                      <Link className="megaMenuLink" to="#">
-                        <div role="link" className="my-1">
-                          Eco-Friendly Business Cards
+                          Calendar Cards
                         </div>
                       </Link>
                     </div>
@@ -119,42 +109,27 @@ const ServiceNavbarComponent = () => {
                     <div className="megamenu">
                       <h6 className="megamenuHeading">
                         <Link to="#">
-                          <span role="link">Business Cards</span>
+                          <span role="link">Gifts</span>
                         </Link>
                       </h6>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Premium Laminated Cards
+                          Photo Frames
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Sandwich Business Cards
+                          Photo Prints
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Standard Business Cards
+                          Photo Mugs
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Textured Business Cards
-                        </div>
-                      </Link>
-                      <Link className="megaMenuLink" to="#">
-                        <div role="link" className="my-1">
-                          Spot UV Business Cards
-                        </div>
-                      </Link>
-                      <Link className="megaMenuLink" to="#">
-                        <div role="link" className="my-1">
-                          Translucent Business Cards
-                        </div>
-                      </Link>
-                      <Link className="megaMenuLink" to="#">
-                        <div role="link" className="my-1">
-                          Eco-Friendly Business Cards
+                          Certificates
                         </div>
                       </Link>
                     </div>
@@ -163,42 +138,32 @@ const ServiceNavbarComponent = () => {
                     <div className="megamenu">
                       <h6 className="megamenuHeading">
                         <Link to="#">
-                          <span role="link">Business Cards</span>
+                          <span role="link">Cards</span>
                         </Link>
                       </h6>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Premium Laminated Cards
+                          Thank you Cards
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Sandwich Business Cards
+                          Post Cards
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Standard Business Cards
+                          Invitations
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Textured Business Cards
+                          Greeting Cards
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Spot UV Business Cards
-                        </div>
-                      </Link>
-                      <Link className="megaMenuLink" to="#">
-                        <div role="link" className="my-1">
-                          Translucent Business Cards
-                        </div>
-                      </Link>
-                      <Link className="megaMenuLink" to="#">
-                        <div role="link" className="my-1">
-                          Eco-Friendly Business Cards
+                          Bookmarks
                         </div>
                       </Link>
                     </div>
@@ -228,7 +193,7 @@ const ServiceNavbarComponent = () => {
                     <div className="megamenu">
                       <h6 className="megamenuHeading">
                         <Link to="#">
-                          <span role="link">Office Supplies</span>
+                          <span role="link">Business Cards</span>
                         </Link>
                       </h6>
                       <Link className="megaMenuLink" to="#">
@@ -277,37 +242,27 @@ const ServiceNavbarComponent = () => {
                       </h6>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Premium Laminated Cards
+                          Letterheads
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Sandwich Business Cards
+                          Envelopes
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Standard Business Cards
+                          Rubber Stamps
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Textured Business Cards
+                          Bill Books
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Spot UV Business Cards
-                        </div>
-                      </Link>
-                      <Link className="megaMenuLink" to="#">
-                        <div role="link" className="my-1">
-                          Translucent Business Cards
-                        </div>
-                      </Link>
-                      <Link className="megaMenuLink" to="#">
-                        <div role="link" className="my-1">
-                          Eco-Friendly Business Cards
+                          Presentation Folders
                         </div>
                       </Link>
                     </div>
@@ -316,42 +271,32 @@ const ServiceNavbarComponent = () => {
                     <div className="megamenu">
                       <h6 className="megamenuHeading">
                         <Link to="#">
-                          <span role="link">Office Supplies</span>
+                          <span role="link">Cards</span>
                         </Link>
                       </h6>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Premium Laminated Cards
+                          Post Cards
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Sandwich Business Cards
+                          Thank You Cards
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Standard Business Cards
+                          Greeting Cards
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Textured Business Cards
+                          Save the Date Cards
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Spot UV Business Cards
-                        </div>
-                      </Link>
-                      <Link className="megaMenuLink" to="#">
-                        <div role="link" className="my-1">
-                          Translucent Business Cards
-                        </div>
-                      </Link>
-                      <Link className="megaMenuLink" to="#">
-                        <div role="link" className="my-1">
-                          Eco-Friendly Business Cards
+                          Vouchers
                         </div>
                       </Link>
                     </div>
@@ -360,42 +305,27 @@ const ServiceNavbarComponent = () => {
                     <div className="megamenu">
                       <h6 className="megamenuHeading">
                         <Link to="#">
-                          <span role="link">Office Supplies</span>
+                          <span role="link">Notebooks</span>
                         </Link>
                       </h6>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Premium Laminated Cards
+                          Wiro Notebook
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Sandwich Business Cards
+                          Staple Notebook
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Standard Business Cards
+                          Perfect Bind Notebook
                         </div>
                       </Link>
                       <Link className="megaMenuLink" to="#">
                         <div role="link" className="my-1">
-                          Textured Business Cards
-                        </div>
-                      </Link>
-                      <Link className="megaMenuLink" to="#">
-                        <div role="link" className="my-1">
-                          Spot UV Business Cards
-                        </div>
-                      </Link>
-                      <Link className="megaMenuLink" to="#">
-                        <div role="link" className="my-1">
-                          Translucent Business Cards
-                        </div>
-                      </Link>
-                      <Link className="megaMenuLink" to="#">
-                        <div role="link" className="my-1">
-                          Eco-Friendly Business Cards
+                          Hard Case Notebook
                         </div>
                       </Link>
                     </div>

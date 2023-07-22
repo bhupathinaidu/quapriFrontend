@@ -2,7 +2,6 @@ import React from "react";
 import "./homepage.css";
 import { useSelector } from "react-redux";
 import { currentUser } from "../../store/test/test.reducer";
-import HeaderComponent from "../../components/header/header.component";
 import CarouselComponent from "../../components/carousel/carousel.component";
 import {
   promoCarousel,
@@ -18,7 +17,6 @@ import Col from "react-bootstrap/Col";
 import packageImg from "../../assets/packaging-img.PNG";
 import singageImg from "../../assets/singage.PNG";
 import returnImg from "../../assets/return.PNG";
-import Footer from "../../components/footer/footer.component";
 
 const HomePage = () => {
   const user = useSelector(currentUser);

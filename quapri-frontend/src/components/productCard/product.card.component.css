@@ -11,7 +11,7 @@
 .popularProduct {
     height: auto;
     width: 208px;
-    cursor: pointer;
+    text-align: center;
 }
 
 .popularProduct > img {
