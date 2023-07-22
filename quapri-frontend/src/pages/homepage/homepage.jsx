@@ -2,7 +2,6 @@ import React from "react";
 import "./homepage.css";
 import { useSelector } from "react-redux";
 import { currentUser } from "../../store/test/test.reducer";
-import HeaderComponent from "../../components/header/header.component";
 import CarouselComponent from "../../components/carousel/carousel.component";
 import {
   promoCarousel,
@@ -18,7 +17,6 @@ import Col from "react-bootstrap/Col";
 import packageImg from "../../assets/packaging-img.PNG";
 import singageImg from "../../assets/singage.PNG";
 import returnImg from "../../assets/return.PNG";
-import Footer from "../../components/footer/footer.component";
 
 const HomePage = () => {
   const user = useSelector(currentUser);
@@ -36,27 +34,27 @@ const HomePage = () => {
             ))}
           </div>
         </div>
-        <div className='photoProductContainer'>
+        <div className="photoProductContainer">
           <ProductHeadingComponent heading="Photo Products" />
           <CarouselComponent properties={photoProductCarousel} />
         </div>
-        <div className='newLaunchesContainer'>
+        <div className="newLaunchesContainer">
           <ProductHeadingComponent heading="New Launches" />
           <CarouselComponent properties={photoProductCarousel} />
         </div>
-        <div className='corporateGiftsContainer'>
+        <div className="corporateGiftsContainer">
           <ProductHeadingComponent heading="Corporate Gifts" />
           <CarouselComponent properties={photoProductCarousel} />
         </div>
-        <div className='stationeryContainer'>
+        <div className="stationeryContainer">
           <ProductHeadingComponent heading="Stationery" />
           <CarouselComponent properties={photoProductCarousel} />
         </div>
-        <div className='packagingContainer'>
+        <div className="packagingContainer">
           <ProductHeadingComponent heading="Packaging" />
           <CarouselComponent properties={photoProductCarousel} />
         </div>
-        <div className='signMarketingContainer'>
+        <div className="signMarketingContainer">
           <ProductHeadingComponent heading="Signs & Marketing" />
           <CarouselComponent properties={photoProductCarousel} />
         </div>
@@ -139,7 +137,8 @@ const HomePage = () => {
           </Row>
         </Container>
       </header>
-    </div>)
-}
+    </div>
+  );
+};
 
 export default HomePage;

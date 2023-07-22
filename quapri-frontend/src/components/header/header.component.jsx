@@ -38,7 +38,9 @@ const HeaderComponent = () => {
                   <span className="mob">
                     +91-1234567890
                     <br />
-                    <span className="callUsText">call us to place an order</span>
+                    <span className="callUsText">
+                      call us to place an order
+                    </span>
                   </span>
                 </span>
               </li>
