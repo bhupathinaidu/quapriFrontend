@@ -1,0 +1,55 @@
+.listItem {
+    margin: 15px;
+    cursor: pointer;
+}
+
+.bgViolet {
+    background-color: #2B2353;
+    margin-bottom: 30px;
+    
+}
+
+.bgWhiteMarginHigh {
+    background-color: #FFF;
+    margin: 0px 80px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.bgWhiteMarginNormal {
+    background-color: #FFF;
+    margin: 0px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.bgWhiteMarginHigh .listItem p {
+    text-align: center;
+    font-size: 12px;
+}
+
+.bgWhiteMarginHigh p, .bgWhiteMarginNormal p {
+    color: #00000099;
+    font-size: 14px;
+    margin: 0;
+    font-weight: 600;
+    padding: 10px 0;
+    color: #000;
+}
+
+.bgWhiteMarginHigh .listItem img {
+    width: 80px;
+}
+
+.bgWhiteMarginNormal .listItem img {
+    width: 180px;
+}
+@media screen and (max-width: 700px) {
+    .bgWhiteMarginHigh {
+        margin: 0 20px;
+    }
+
+    .bgWhiteMarginHigh .listItem img {
+        width: 190px;
+    }
+}

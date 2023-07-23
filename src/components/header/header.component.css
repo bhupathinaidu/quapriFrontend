@@ -1,0 +1,106 @@
+.headerContainer{
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 50px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:99999;
+}
+
+.logoSearchContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 75px;
+    width: auto;
+    margin-right: 1rem;
+}
+
+.callLoginStoreContainer {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    color: #39424e;
+    font-size: 16px;
+    display: flex;
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+    margin: 0 5px;
+    &:hover {
+        color: #700695;
+    } 
+}
+
+.callUs {
+    display: flex !important;
+}
+
+.callUs i {
+    font-size: 18px;
+    margin: 10px 10px 0 0;
+}
+
+.loginSignup {
+    cursor: pointer;
+}
+
+.loginSignup i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.cartImg {
+    height: 25px;
+    width: 25px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.mob {
+    font-size: 20px;
+    line-height: 19px;
+    display: block;
+}
+
+.callUsText {
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.cartDesktop {
+    position: relative;
+}
+
+.cartCounter {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background: #2b2353;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    top: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .logo {
+        height: 45px;
+    }
+    .searchDesktop,
+    .nav .callUs,
+    .nav .cartDesktop {
+        display: none;
+    }
+    .serviceList {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+}
