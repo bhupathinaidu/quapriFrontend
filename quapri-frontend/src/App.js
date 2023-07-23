@@ -3,7 +3,7 @@ import HomePage from "./pages/homepage/homepage";
 import HeaderComponent from "./components/header/header.component";
 import Footer from "./components/footer/footer.component";
 import ProductListingComponent from "./components/productListing/product.listing.component";
-import { apparelProps, awardsProps, bagPacksProps, bookletsProps, businessCardsProps, corporateGiftsProps, drinkwareProps, giftHampersProps, keyChainsProps, labelsProps, mailerBoxesProps, marketingProps, namePlatesProps, packagingProps, pensProps, photogGiftsProps, sameDayDeliveryProps, signsProps, stationeryProps, stickersLabelsProps } from "./commom/listing.constants";
+import { acrylicDeskStandsProps, apparelProps, arcylicPrintsProps, awardsProps, bagPacksProps, bannersProps, bookletsProps, businessCardsProps, corporateGiftsProps, courierPolyBagsProps, desktopItemsProps, diariesProps, drinkwareProps, flexiblePouchesProps, foodCakeBoxesProps, giftHampersProps, greetingCardsProps, invitationCardsProps, keyChainsProps, labelsProps, laminatedCardsProps, largeFormatStickerProps, mailerBoxesProps, marketingProps, namePlatesProps, packagingProps, paperBagsProps, pensProps, photoBooksProps, photoFramesProps, photoMugsProps, photoPrintsProps, photogGiftsProps, postersProps, recycledTShirtsProps, sameDayDeliveryProps, sheetStickersProps, signsProps, sleevedMailerBoxesProps, standeesProps, stationeryProps, stickersLabelsProps, sunBoardPostersProps, wallDecalsProps } from "./commom/listing.constants";
 import ScrollToTopComponent from "./components/scrollToTop/scrollToTop.component";
 
 function App() {
@@ -33,6 +33,33 @@ function App() {
         <Route path="/labels" element={<ProductListingComponent properties={labelsProps}/>}></Route>
         <Route path="/pens" element={<ProductListingComponent properties={pensProps}/>}></Route>
         <Route path="/keychains" element={<ProductListingComponent properties={keyChainsProps}/>}></Route>
+        <Route path="/photo-frames" element={<ProductListingComponent properties={photoFramesProps}/>}></Route>
+        <Route path="/photo-mugs" element={<ProductListingComponent properties={photoMugsProps}/>}></Route>
+        <Route path="/arcylic-prints" element={<ProductListingComponent properties={arcylicPrintsProps}/>}></Route>
+        <Route path="/posters" element={<ProductListingComponent properties={postersProps}/>}></Route>
+        <Route path="/photo-prints" element={<ProductListingComponent properties={photoPrintsProps}/>}></Route>
+        <Route path="/photo-books" element={<ProductListingComponent properties={photoBooksProps}/>}></Route>
+        <Route path="/invitation-cards" element={<ProductListingComponent properties={invitationCardsProps}/>}></Route>
+        <Route path="/greeting-cards" element={<ProductListingComponent properties={greetingCardsProps}/>}></Route>
+        <Route path="/desktop-items" element={<ProductListingComponent properties={desktopItemsProps}/>}></Route>
+        <Route path="/acrylic-desk-stands" element={<ProductListingComponent properties={acrylicDeskStandsProps}/>}></Route>
+        <Route path="/laminated-cards" element={<ProductListingComponent properties={laminatedCardsProps}/>}></Route>
+        <Route path="/flexible-pouches" element={<ProductListingComponent properties={flexiblePouchesProps}/>}></Route>
+        <Route path="/recycled-tshirts" element={<ProductListingComponent properties={recycledTShirtsProps}/>}></Route>
+        <Route path="/event-id-cards" element={<ProductListingComponent properties={recycledTShirtsProps}/>}></Route>
+        <Route path="/sheet-stickers" element={<ProductListingComponent properties={sheetStickersProps}/>}></Route>
+        <Route path="/diaries" element={<ProductListingComponent properties={diariesProps}/>}></Route>
+        <Route path="/sleeved-mailer-boxes" element={<ProductListingComponent properties={sleevedMailerBoxesProps}/>}></Route>
+        <Route path="/paper-bags" element={<ProductListingComponent properties={paperBagsProps}/>}></Route>
+        <Route path="/courier-poly-bags" element={<ProductListingComponent properties={courierPolyBagsProps}/>}></Route>
+        <Route path="/packing-tapes" element={<ProductListingComponent properties={packagingProps}/>}></Route>
+        <Route path="/food-cake-boxes" element={<ProductListingComponent properties={foodCakeBoxesProps}/>}></Route>
+        <Route path="/standees" element={<ProductListingComponent properties={standeesProps}/>}></Route>
+        <Route path="/lollipop-sign" element={<ProductListingComponent properties={standeesProps}/>}></Route>
+        <Route path="/banners" element={<ProductListingComponent properties={bannersProps}/>}></Route>
+        <Route path="/large-format-sticker" element={<ProductListingComponent properties={largeFormatStickerProps}/>}></Route>
+        <Route path="/wall-decals" element={<ProductListingComponent properties={wallDecalsProps}/>}></Route>
+        <Route path="/sun-board-poster" element={<ProductListingComponent properties={sunBoardPostersProps}/>}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>

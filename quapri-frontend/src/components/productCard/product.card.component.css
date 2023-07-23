@@ -1,4 +1,10 @@
-.popularProductsConatiner {
+.popularProductsConatiner,
+.photoProductContainer,
+.newLaunchesContainer,
+.corporateGiftsContainer,
+.stationeryContainer,
+.packagingContainer,
+.signMarketingContainer {
     max-width: 1250px;
     margin: 0px 50px;
 }
@@ -12,6 +18,10 @@
     height: auto;
     width: 208px;
     text-align: center;
+}
+
+.popularProduct img {
+    width: 190px;
 }
 
 .popularProduct > img {
@@ -40,5 +50,9 @@
 
     .popularProduct {
         width: 160px;
+    }
+
+    .popularProduct img {
+        width: 150px;
     }
 }

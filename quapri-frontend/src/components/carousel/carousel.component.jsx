@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 const CarouselComponent = ({ properties }) => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -21,7 +20,7 @@ const CarouselComponent = ({ properties }) => {
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1.5,
-      partialVisibilityGutter: 20,
+      partialVisibilityGutter: 10,
     },
   };
 

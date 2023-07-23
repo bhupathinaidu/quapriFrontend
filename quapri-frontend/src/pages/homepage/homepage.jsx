@@ -7,6 +7,10 @@ import {
   promoCarousel,
   servicesCarousel,
   photoProductCarousel,
+  newLaunchesCarousel,
+  corporateGiftsCarousel,
+  packagingsCarousel,
+  signMarketingsCarousel,
 } from "../../commom/carousel.constants";
 import ProductHeadingComponent from "../../components/productHeading/product.heading.component";
 import { productList } from "../../commom/product.constants";
@@ -40,23 +44,19 @@ const HomePage = () => {
         </div>
         <div className="newLaunchesContainer">
           <ProductHeadingComponent heading="New Launches" />
-          <CarouselComponent properties={photoProductCarousel} />
+          <CarouselComponent properties={newLaunchesCarousel} />
         </div>
         <div className="corporateGiftsContainer">
           <ProductHeadingComponent heading="Corporate Gifts" />
-          <CarouselComponent properties={photoProductCarousel} />
-        </div>
-        <div className="stationeryContainer">
-          <ProductHeadingComponent heading="Stationery" />
-          <CarouselComponent properties={photoProductCarousel} />
+          <CarouselComponent properties={corporateGiftsCarousel} />
         </div>
         <div className="packagingContainer">
           <ProductHeadingComponent heading="Packaging" />
-          <CarouselComponent properties={photoProductCarousel} />
+          <CarouselComponent properties={packagingsCarousel} />
         </div>
         <div className="signMarketingContainer">
           <ProductHeadingComponent heading="Signs & Marketing" />
-          <CarouselComponent properties={photoProductCarousel} />
+          <CarouselComponent properties={signMarketingsCarousel} />
         </div>
         <Container className="mt-4">
           <Row className="align-items-center">
@@ -74,7 +74,7 @@ const HomePage = () => {
                 heavily on the quality of its materials. Environmentally
                 friendly packaging is usually preferred by customers. Today,
                 innovative, reusable, and sustainable packaging are being
-                created every day. Take advantage of Printo's broad packaging
+                created every day. Take advantage of Quapri's broad packaging
                 range, and ace your business.
               </div>
               <button className="btn btn-primary mt-3">Read More</button>
@@ -92,7 +92,7 @@ const HomePage = () => {
                 heavily on the quality of its materials. Environmentally
                 friendly packaging is usually preferred by customers. Today,
                 innovative, reusable, and sustainable packaging are being
-                created every day. Take advantage of Printo's broad packaging
+                created every day. Take advantage of Quapri's broad packaging
                 range, and ace your business.
               </div>
               <button className="btn btn-primary mt-3">Read More</button>
@@ -124,14 +124,14 @@ const HomePage = () => {
               </div>
               <div className="pt-3">
                 From Business Cards to Signage to Employee Joining Kits -- since
-                2006, Printo has helped 10 lakh+ small, medium & some of India's
+                2006, Quapri has helped 10 lakh+ small, medium & some of India's
                 largest businesses like Google, Accenture & PhonePe.
               </div>
               <div className="pt-3 py-3">
-                Printo is headquartered in Bangalore, India, with a 50,000+ sq.
+                Quapri is headquartered in Bangalore, India, with a 50,000+ sq.
                 ft production facility. From the first store in Koramangala,
-                Bangalore, Printo has launched 28 retail stores across 6-cities.
-                Order from Printo.in or in-store or talk to our teams today.
+                Bangalore, Quapri has launched 28 retail stores across 6-cities.
+                Order from Quapri.in or in-store or talk to our teams today.
               </div>
             </Col>
           </Row>

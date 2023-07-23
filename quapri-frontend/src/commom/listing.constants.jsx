@@ -1040,3 +1040,1407 @@ export const keyChainsProps = {
     },
   ],
 };
+
+export const photoFramesProps = {
+  route: "Photo Frames",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const photoMugsProps = {
+  route: "Photo Mugs",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const arcylicPrintsProps = {
+  route: "Arcylic Prints",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const postersProps = {
+  route: "Posters",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const photoPrintsProps = {
+  route: "Photo Prints",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const photoBooksProps = {
+  route: "Photo Books",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const invitationCardsProps = {
+  route: "Invitation Cards",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const greetingCardsProps = {
+  route: "Greeting Cards",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const desktopItemsProps = {
+  route: "Desktop Items",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const acrylicDeskStandsProps = {
+  route: "Acrylic Desk Stands",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const laminatedCardsProps = {
+  route: "Laminated Cards",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const flexiblePouchesProps = {
+  route: "Flexible Pouches",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const recycledTShirtsProps = {
+  route: "Recycled T-Shirts",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const EventIdCardsProps = {
+  route: "Event ID Cards",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const sheetStickersProps = {
+  route: "Sheet Stickers",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const diariesProps = {
+  route: "Diaries",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const sleevedMailerBoxesProps = {
+  route: "Sleeved Mailer Boxes",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const paperBagsProps = {
+  route: "Paper Bags",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const courierPolyBagsProps = {
+  route: "Courier Poly Bags",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const packingTapesProps = {
+  route: "Packing Tapes",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const foodCakeBoxesProps = {
+  route: "Food & Cake Boxes",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const standeesProps = {
+  route: "Standees",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const lollipopSignProps = {
+  route: "Lollipop Sign",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const bannersProps = {
+  route: "Banners",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const largeFormatStickerProps = {
+  route: "Large Format Sticker",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const wallDecalsProps = {
+  route: "Wall Decals",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
+
+export const sunBoardPostersProps = {
+  route: "Sun Board Poster",
+  mainBanner: test_main_banner,
+  productList: [
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+    {
+      imgUrl: test_plp_product,
+      label: "test",
+      price: "₹ 120.00",
+    },
+  ],
+};
