@@ -4,6 +4,7 @@ import HeaderComponent from "./components/header/header.component";
 import Footer from "./components/footer/footer.component";
 import ProductListingComponent from "./components/productListing/product.listing.component";
 import { acrylicDeskStandsProps, apparelProps, arcylicPrintsProps, awardsProps, bagPacksProps, bannersProps, bookletsProps, businessCardsProps, corporateGiftsProps, courierPolyBagsProps, desktopItemsProps, diariesProps, drinkwareProps, flexiblePouchesProps, foodCakeBoxesProps, giftHampersProps, greetingCardsProps, invitationCardsProps, keyChainsProps, labelsProps, laminatedCardsProps, largeFormatStickerProps, mailerBoxesProps, marketingProps, namePlatesProps, packagingProps, paperBagsProps, pensProps, photoBooksProps, photoFramesProps, photoMugsProps, photoPrintsProps, photogGiftsProps, postersProps, recycledTShirtsProps, sameDayDeliveryProps, sheetStickersProps, signsProps, sleevedMailerBoxesProps, standeesProps, stationeryProps, stickersLabelsProps, sunBoardPostersProps, wallDecalsProps } from "./commom/listing.constants";
+import ProductDetailComponent from "./components/productDetail/product.detail.component";
 import ScrollToTopComponent from "./components/scrollToTop/scrollToTop.component";
 
 function App() {
@@ -14,6 +15,10 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/same-day-delivery" element={<ProductListingComponent properties={sameDayDeliveryProps}/>}></Route>
+        <Route path="/same-day-delivery/customizable-products/same-day-business-cards"
+            element={<ProductDetailComponent route={"Business Cards"}
+              subRoute={"Business Cards - Express Delivery"} />}>
+          </Route>
         <Route path="/stationery" element={<ProductListingComponent properties={stationeryProps}/>}></Route>
         <Route path="/corporate-gifts" element={<ProductListingComponent properties={corporateGiftsProps}/>}></Route>
         <Route path="/drinkware" element={<ProductListingComponent properties={drinkwareProps}/>}></Route>
