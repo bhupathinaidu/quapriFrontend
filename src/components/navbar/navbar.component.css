@@ -1,41 +1,41 @@
 .navbar {
-    padding: 0 !important;
+  padding: 0 !important;
 }
 
 .otherNavLinks {
-    display: flex;
+  display: flex;
 }
 
 .link {
-    color: #39424e;
-    font-size: 14px;
-    display: block;
-    padding: 0.5rem 0.5rem;
-    text-decoration: none;
-    margin: 0 5px;
-    &:hover {
-        color: #700695;
-    }
+  color: #39424e;
+  font-size: 14px;
+  display: block;
+  padding: 0.5rem 0.5rem;
+  text-decoration: none;
+  margin: 0 5px;
+  &:hover {
+    color: #700695;
+  }
 }
 
 .businessLink {
-    padding: 0.5rem;
-    margin-left: 0.5rem;
-    background-color: #fa8038 !important;
-    color: #fff !important;
-    font-size: 14px;
-    line-height: 21px;
-    text-decoration: none;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  background-color: #faaa19 !important;
+  color: #fff !important;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration: none;
 }
 
 @media (min-width: 1200px) {
-    .container {
-        max-width: 1250px !important;
-    }
+  .container {
+    max-width: 1250px !important;
+  }
 }
 
 @media (max-width: 991px) {
-    .desktop-navbar-menu {
-        display: none!important;
-    }
+  .desktop-navbar-menu {
+    display: none !important;
+  }
 }
