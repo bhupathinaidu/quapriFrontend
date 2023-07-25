@@ -1,90 +1,90 @@
 .serviceNavbarContainer {
-    background-color: #f8f9fa;
-    margin: 0;
+  background-color: #f8f9fa;
+  margin: 0;
 }
 
 .serviceNavbarWrapper {
-    max-width: 1250px;
-    margin: 0px 50px;
-    display: flex;
-    justify-content: space-between;
+  max-width: 1250px;
+  margin: 0px 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .serviceList {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 0;
 }
 
 .serviceList > .nav-item {
-    font-size: 16px;
-    margin-right: 25px;
-    color: #39424e;
-    cursor: pointer;
-    padding: 9px 0;
-    position: static;
-    &:hover {
-        color: #700695;
-    }
+  font-size: 16px;
+  margin-right: 25px;
+  color: #39424e;
+  cursor: pointer;
+  padding: 9px 0;
+  position: static;
+  &:hover {
+    color: #700695;
+  }
 }
 
 .dropdown-toggle::after {
-    border: none !important;
+  border: none !important;
 }
 
 .dropdown-menu {
-    width: 1200px;
-    z-index: 1001 !important;
-    float: left;
-    left: 85px;
+  width: 1200px;
+  z-index: 1001 !important;
+  float: left;
+  left: 85px;
 }
 
-.dropdown:hover>.dropdown-menu {
-    display: block;
+.dropdown:hover > .dropdown-menu {
+  display: block;
 }
-  
-.dropdown>.dropdown-toggle:active {
-    pointer-events: none;
+
+.dropdown > .dropdown-toggle:active {
+  pointer-events: none;
 }
 
 .megamenuContainer {
-    padding: 25px 20px;
+  padding: 25px 20px;
 }
 
-.megamenu span{
-    color: #3a2f29;
+.megamenu span {
+  color: #3a2f29;
 }
 
 .megamenuHeading {
-    font-size: 14px; 
-    font-weight: 500; 
-    padding-bottom: 8px; 
-    border-bottom: 1px solid rgb(225, 225, 225); 
-    margin-bottom: 8px; 
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-    color: rgb(102, 45, 145);
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgb(225, 225, 225);
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(102, 45, 145);
 }
 
 .serviceList > li > a {
-    color: #39424e !important;
-    &:hover {
-        color: #700695 !important;
-    }
+  color: #39424e !important;
+  &:hover {
+    color: #700695 !important;
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .dropdown-menu {
-        display: none !important;
-    }
-    .serviceNavbarWrapper {
-        margin: 0;
-    }
-    .serviceList {
-        flex-wrap: wrap;
-        padding: 0;
-    }
+  .dropdown-menu {
+    display: none !important;
+  }
+  .serviceNavbarWrapper {
+    margin: 0;
+  }
+  .serviceList {
+    flex-wrap: wrap;
+    padding: 0;
+  }
 }
