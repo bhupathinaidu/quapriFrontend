@@ -6,7 +6,7 @@
 .packagingContainer,
 .signMarketingContainer {
     max-width: 1250px;
-    margin: 0px 50px;
+    margin: 0px auto;
 }
 
 .popularProducts {

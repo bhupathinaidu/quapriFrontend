@@ -30,6 +30,20 @@ import cakeBoxes from "../assets/packaging/cakeBoxes.jpg";
 import namePlateSign from "../assets/signsMarketing/namePlateSign.jpg";
 import standees from "../assets/signsMarketing/standees.jpg";
 import visitingCard from "../assets/popularProducts/visitingCard.jpg";
+import acrylicDeskStand from "../assets/newLaunches/acrylicDeskStand.jpg";
+import desktopItem from "../assets/newLaunches/desktopItem.jpg";
+import laminatedCard from "../assets/newLaunches/laminatedCards.jpg";
+import flexiblePouch from "../assets/newLaunches/flexiblePouches.jpg";
+import recycledTshirt from "../assets/newLaunches/recycledTees.jpg";
+import eventCard from "../assets/newLaunches/eventIdCard.jpg";
+import sheetSticker from "../assets/newLaunches/sheetSticker.jpg";
+import bannerPrint from "../assets/signsMarketing/bannerPrint.jpg";
+import largeFormatSticker from "../assets/signsMarketing/largeFormatSticker.jpg";
+import lollipopSign from "../assets/signsMarketing/lollipopSign.jpg";
+import sunBoardPoster from "../assets/signsMarketing/sunBoardPoster.jpg";
+import wallDecalSticker from "../assets/signsMarketing/wallDecalsStickers.jpg";
+import award from "../assets/corporateGifts/awards.jpg";
+import diaries from "../assets/corporateGifts/diaries.jpg";
 
 export const promoCarousel = {
   classVal: "bgViolet",
@@ -184,43 +198,43 @@ export const newLaunchesCarousel = {
   list: [
     {
       id: "newLaunchesCarouselItem1",
-      imgSrc: photoFrame,
+      imgSrc: desktopItem,
       label: "Desktop items",
       src: "/desktop-items",
     },
     {
       id: "newLaunchesCarouselItem2",
-      imgSrc: photoFrame,
+      imgSrc: acrylicDeskStand,
       label: "Acrylic Desk Stands",
       src: "/acrylic-desk-stands",
     },
     {
       id: "newLaunchesCarouselItem3",
-      imgSrc: visitingCard,
+      imgSrc: laminatedCard,
       label: "Laminated Cards",
       src: "/laminated-cards",
     },
     {
       id: "newLaunchesCarouselItem4",
-      imgSrc: flexiblePouches,
+      imgSrc: flexiblePouch,
       label: "Flexible Pouches",
       src: "/flexible-pouches",
     },
     {
       id: "newLaunchesCarouselItem5",
-      imgSrc: photoFrame,
+      imgSrc: recycledTshirt,
       label: "Recycled T-shirts",
       src: "/recycled-tshirts",
     },
     {
       id: "newLaunchesCarouselItem6",
-      imgSrc: photoFrame,
+      imgSrc: eventCard,
       label: "Event ID Cards",
       src: "/event-id-cards",
     },
     {
       id: "newLaunchesCarouselItem7",
-      imgSrc: photoFrame,
+      imgSrc: sheetSticker,
       label: "Sheet Stickers",
       src: "/sheet-stickers",
     },
@@ -245,13 +259,13 @@ export const corporateGiftsCarousel = {
     },
     {
       id: "corporateGiftsCarouselItem3",
-      imgSrc: photoFrame,
+      imgSrc: diaries,
       label: "Diaries",
       src: "/diaries",
     },
     {
       id: "corporateGiftsCarouselItem4",
-      imgSrc: photoFrame,
+      imgSrc: award,
       label: "Awards",
       src: "/awards",
     },
@@ -337,31 +351,31 @@ export const signMarketingsCarousel = {
     },
     {
       id: "signMarketingsCarouselItem3",
-      imgSrc: photoFrame,
+      imgSrc: lollipopSign,
       label: "Lollipop Sign",
       src: "/lollipop-sign",
     },
     {
       id: "signMarketingsCarouselItem4",
-      imgSrc: photoFrame,
+      imgSrc: bannerPrint,
       label: "Banners",
       src: "/banners",
     },
     {
       id: "signMarketingsCarouselItem5",
-      imgSrc: photoFrame,
+      imgSrc: largeFormatSticker,
       label: "Large Format Sticker",
       src: "/large-format-sticker",
     },
     {
       id: "signMarketingsCarouselItem6",
-      imgSrc: photoFrame,
+      imgSrc: wallDecalSticker,
       label: "Wall Decals",
       src: "/wall-decals",
     },
     {
       id: "signMarketingsCarouselItem7",
-      imgSrc: photoFrame,
+      imgSrc: sunBoardPoster,
       label: "Sun Board Poster",
       src: "/sun-board-poster",
     },

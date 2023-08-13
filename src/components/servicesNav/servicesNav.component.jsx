@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const ServiceNavbarComponent = () => {
   return (
     <nav className="serviceNavbarContainer">
-      <div className="serviceNavbarWrapper">
+      <div className="serviceNavbarWrapper container">
         <div className="serviceList">
           <div className="nav-item dropdown">
             <li>
