@@ -20,6 +20,7 @@ import photoPrint from "../assets/photoProducts/photoPrint.jpg";
 import photoBook from "../assets/photoProducts/photoBook.jpg";
 import invitationCard from "../assets/photoProducts/invitationCard.jpg";
 import greetingCard from "../assets/photoProducts/greetingCard.jpg";
+import photoMug from "../assets/photoProducts/photoMug.jpg";
 import flexiblePouches from "../assets/packaging/flexiblePouches.jpg";
 import sleevedMailerBox from "../assets/packaging/sleevedMailerBox.jpg";
 import paperBag from "../assets/packaging/paperBag.jpg";
@@ -29,7 +30,6 @@ import packingTapes from "../assets/packaging/packingTapes.jpg";
 import cakeBoxes from "../assets/packaging/cakeBoxes.jpg";
 import namePlateSign from "../assets/signsMarketing/namePlateSign.jpg";
 import standees from "../assets/signsMarketing/standees.jpg";
-import visitingCard from "../assets/popularProducts/visitingCard.jpg";
 import acrylicDeskStand from "../assets/newLaunches/acrylicDeskStand.jpg";
 import desktopItem from "../assets/newLaunches/desktopItem.jpg";
 import laminatedCard from "../assets/newLaunches/laminatedCards.jpg";
@@ -149,7 +149,7 @@ export const photoProductCarousel = {
     },
     {
       id: "photoProductCarouselItem2",
-      imgSrc: photoFrame,
+      imgSrc: photoMug,
       label: "Photo Mugs",
       src: "/photo-mugs",
     },
