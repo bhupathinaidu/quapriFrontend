@@ -1,5 +1,6 @@
 {
   "name": "quapri-frontend",
+  "homepage": "https://bhupathinaidu.github.io/quapriFrontend/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
