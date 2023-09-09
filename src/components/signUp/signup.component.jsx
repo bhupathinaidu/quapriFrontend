@@ -18,15 +18,15 @@ function Signup(props) {
           <Form>
             <Form.Group className="mb-3" controlId="formBasicName">
               <Form.Label>Name</Form.Label>
-              <Form.Control type="text" placeholder="Enter name" />
+              <Form.Control type="text" placeholder="Enter name" required />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicSignupEmail">
               <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Control type="email" placeholder="Enter email" required />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicSignupPassword">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
+              <Form.Control type="password" placeholder="Password" required />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicRemember">
               <Form.Check type="checkbox" label="Remember Password" />

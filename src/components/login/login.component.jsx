@@ -30,11 +30,11 @@ function Login(props) {
           <Form>
             <Form.Group className="mb-3" controlId="formBasicLoginEmail">
               <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Control type="email" placeholder="Enter email" required />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicLoginPassword">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
+              <Form.Control type="password" placeholder="Password" required />
             </Form.Group>
             <button className="btn btn-dark px-5" type="submit">
               Sign In
