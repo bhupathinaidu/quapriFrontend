@@ -37,4 +37,9 @@ ol.breadcrumb {
 
 .productDetailWrapper {
     margin-bottom: 30px;
+    display: flex;
+}
+
+.tlui-debug-panel {
+    display: none !important;
 }
