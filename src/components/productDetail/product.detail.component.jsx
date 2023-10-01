@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 import "./product.detail.component.css"
 import { productDetail, fetchProductById } from "../../store/product/product.reducer";
 import { useDispatch, useSelector } from "react-redux";
-import { Tldraw } from "@tldraw/tldraw";
+import { Tldraw, TldrawEditor } from "@tldraw/tldraw";
 import '@tldraw/tldraw/tldraw.css'
+import DesignTool from "../canvas/canvas.component";
 
 
 const ProductDetailComponent = ({ route, subRoute }) => {
@@ -61,10 +62,14 @@ const ProductDetailComponent = ({ route, subRoute }) => {
                                             top: "0px",
                                             left: "30px",
                                             width: "93vw",
-                                            height: "100vh"
+                                            height: "100vh",
+                                            background: "lightGrey",
+                                            zIndex: "999"
                                         }}
                                     >
-                                        <Tldraw id={persistenceId} onMount={handleMount} />
+                                        {//<Tldraw id={persistenceId} onMount={handleMount} />
+}
+                                        <DesignTool />
                                     </div>
                                 </div>}
                             </div>

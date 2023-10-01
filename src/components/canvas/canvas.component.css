@@ -1,0 +1,13 @@
+.canvas-container {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    height: 100%;
+}
+
+.canvas-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
