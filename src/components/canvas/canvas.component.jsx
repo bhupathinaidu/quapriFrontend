@@ -1,41 +1,41 @@
-import React, { useRef, useState } from 'react';
-import { fabric } from 'fabric';
-import "./canvas.component.css"
+import React, { useRef, useState } from "react";
+import { fabric } from "fabric";
+import "./canvas.component.css";
 
 const DesignTool = () => {
   const canvasRef = useRef(null);
   const [canvas, setCanvas] = useState(null);
   const [textStyle, setTextStyle] = useState({
     fontSize: 24,
-    fontFamily: 'Arial',
-    fill: '#000000',
-    fontWeight: 'normal', // added fontWeight
-    fontStyle: 'normal',  // added fontStyle
+    fontFamily: "Arial",
+    fill: "#000000",
+    fontWeight: "normal",
+    fontStyle: "Normal",
   });
 
   // Initialize the canvas when the component mounts
   React.useEffect(() => {
     if (!canvas) {
       const newCanvas = new fabric.Canvas(canvasRef.current, {
-        width: 300,
-        height: 300,
-        selectionBorderColor: "red"
+        width: 850,
+        height: 450,
+        selectionBorderColor: "red",
       });
       setCanvas(newCanvas);
     }
   }, [canvas]);
 
- // Function to add text to the canvas
- const addTextToCanvas = () => {
+  // Function to add text to the canvas
+  const addTextToCanvas = () => {
     if (canvas) {
-      const text = new fabric.IText('Your Text Here', {
+      const text = new fabric.IText("Your Text Here", {
         left: 100,
         top: 100,
         fontSize: textStyle.fontSize,
         fontFamily: textStyle.fontFamily,
         fill: textStyle.fill,
         fontWeight: textStyle.fontWeight, // set fontWeight
-        fontStyle: textStyle.fontStyle,   // set fontStyle
+        fontStyle: textStyle.fontStyle, // set fontStyle
       });
       canvas.add(text);
       canvas.renderAll();
@@ -50,24 +50,21 @@ const DesignTool = () => {
     });
   };
 
-
   const handleFontWeightChange = (style) => {
     setTextStyle({
-        ...textStyle,
-        fontWeight: style,
-      });
+      ...textStyle,
+      fontWeight: style,
+    });
 
-      if (canvas) {
-        const activeObject = canvas.getActiveObject();
-  
-        if (activeObject && activeObject.type === 'i-text') {
-          activeObject.set({ fontWeight: style });
-          canvas.renderAll();
-        }
+    if (canvas) {
+      const activeObject = canvas.getActiveObject();
+
+      if (activeObject && activeObject.type === "i-text") {
+        activeObject.set({ fontWeight: style });
+        canvas.renderAll();
+      }
     }
-      
   };
-  
 
   // Function to change the font color
   const changeFontColor = (color) => {
@@ -77,7 +74,6 @@ const DesignTool = () => {
     });
   };
 
-
   const addShapeToCanvas = (shape) => {
     if (canvas) {
       const rect = new fabric.Rect({
@@ -85,8 +81,8 @@ const DesignTool = () => {
         top: 200,
         width: 100,
         height: 100,
-        fill: 'blue',
-        borderColor: "black"
+        fill: "blue",
+        borderColor: "black",
       });
       canvas.add(rect);
       canvas.renderAll();
@@ -144,43 +140,52 @@ const DesignTool = () => {
     //   URL.revokeObjectURL(url);
     // }
     if (canvas) {
-        const svgString = canvas.toSVG();
-        sessionStorage.setItem('savedSVG', svgString);
-      }
+      const svgString = canvas.toSVG();
+      sessionStorage.setItem("savedSVG", svgString);
+    }
   };
 
   return (
     <div className="canvas-container">
+      <div className="canvasWrapper">
         <div className="canvas-wrapper">
+          <button onClick={addTextToCanvas}>Add Text</button>
+          <input
+            type="text"
+            placeholder="Font Style"
+            onChange={(e) => changeFontStyle(e.target.value)}
+            value={textStyle.fontStyle}
+          />
+          <input
+            type="color"
+            onChange={(e) => changeFontColor(e.target.value)}
+            value={textStyle.fill}
+          />
+          <select
+            onChange={(e) => handleFontWeightChange(e.target.value)}
+            value={textStyle.fontWeight}>
+            <option value="normal">Normal</option>
+            <option value="bold">Bold</option>
+            <option value="bolder">Bolder</option>
+            <option value="lighter">Lighter</option>
+          </select>
+          <label for="fileInput">Upload File</label>
+          <input
+            type="file"
+            accept="image/*"
+            id="fileInput"
+            onChange={handleImageUpload}
+          />
+          <button onClick={addShapeToCanvas}>Add Shape</button>
+          <button onClick={removeSelectedObject}>Remove Selected</button>
+          <button onClick={saveAsSvg}>Save as SVG</button>
+        </div>
+      </div>
 
-        
-      <button onClick={addTextToCanvas}>Add Text</button>
-      <input
-        type="text"
-        placeholder="Font Style"
-        onChange={(e) => changeFontStyle(e.target.value)}
-        value={textStyle.fontStyle}
-      />
-      <input
-        type="color"
-        onChange={(e) => changeFontColor(e.target.value)}
-        value={textStyle.fill}
-      />
-      <select onChange={e => handleFontWeightChange(e.target.value)} value={textStyle.fontWeight}>
-        <option value="normal">Normal</option>
-        <option value="bold">Bold</option>
-        <option value="bolder">Bolder</option>
-        <option value="lighter">Lighter</option>
-      </select>
-      <input type="file" accept="image/*" onChange={handleImageUpload} />
-      <button onClick={addShapeToCanvas}>Add Shape</button>
-      <button onClick={removeSelectedObject}>Remove Selected</button>
-      <button onClick={saveAsSvg}>Save as SVG</button>
+      <div className="canvasContainer">
+        <canvas ref={canvasRef} width={850} height={450}></canvas>
       </div>
-      <div  style={{ border: '1px solid #000', width: "max-content", background: "#fff" }}>
-      <canvas ref={canvasRef} width={300} height={300}></canvas>
-      </div>
-      
+
       {/* Additional UI components for layer management, export, etc. */}
     </div>
   );

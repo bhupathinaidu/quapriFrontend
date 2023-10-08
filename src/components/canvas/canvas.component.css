@@ -1,13 +1,47 @@
 .canvas-container {
     display: flex;
-    justify-content: space-around;
     margin: auto;
     align-items: center;
     height: 100%;
 }
 
+.canvasWrapper {
+    height: 100vh;
+    background: #fff;
+    padding: 25px 15px 0 25px;
+    width: 334px;
+    position: relative;
+}
+
 .canvas-wrapper {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    top: calc(50% - 180px);
+}
+
+.canvas-wrapper > * {
+    width: 114px;
+    margin-left: 30px;
+    height: 65px;
+    margin-bottom: 30px;
+    text-align: center;
+    border: 1px solid #000;
+    box-shadow: rgb(0 0 0 / 32%) 0px 2px 6px 0px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label[for="fileInput"] {
+    padding: 20px 15px;
+}
+
+.canvasContainer {
+    border: 1px solid #000; 
+    width: max-content;
+    background: #fff;
+    position: absolute;
+    left: calc(50% - 256px);
 }

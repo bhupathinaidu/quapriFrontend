@@ -47,3 +47,40 @@ ol.breadcrumb {
 .tlui-debug-panel {
     display: none !important;
 }
+
+.labelGroup {
+    margin-bottom: 20px;
+}
+
+.labelGroup h4 {
+    margin-right: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 150px;
+}
+
+.labelGroup .form-check {
+    width: 90px;
+}
+
+.labelGroup .form-select {
+    width: 350px;
+}
+
+.closeButton {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    z-index: 9999;
+    cursor: pointer;
+    display: flex;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.closeButton img {
+    width: 20px;
+    margin-left: 15px;
+}
