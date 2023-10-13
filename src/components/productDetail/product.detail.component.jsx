@@ -57,107 +57,113 @@ const ProductDetailComponent = ({ route, subRoute }) => {
             </nav>
           </div>
           <div className="container productDetailWrapper">
-            <div className="col-12 col-md-6 p-0 pb-3 px-md-3 productPictureAndCarausel">
-              <img className="productMainPicture" src={mainImg} alt="mainImg" />
-            </div>
-            <div className="col-12 col-md-6 productDetails">
-              <h1 className="pb-3">{productDetails?.data?.name}</h1>
-              <p style={{ fontSize: "16px", color: "rgba(0, 0, 0, 0.6)" }}>
-                {productDetails?.data?.description}
-              </p>
-              <Form>
-                <div className="labelGroup d-flex align-items-center">
-                  <h4>Shape</h4>
-                  {["radio"].map((type) => (
-                    <div key={`shape`} className="d-flex align-items-center">
-                      <Form.Check
-                        type={type}
-                        id={`square`}
-                        label={`Square`}
-                        name="shape"
-                        inline
-                      />
-                      <Form.Check
-                        type={type}
-                        id={`standard`}
-                        label={`Standard`}
-                        name="shape"
-                        inline
-                      />
-                    </div>
-                  ))}
-                </div>
-                <div className="labelGroup d-flex align-items-center">
-                  <h4>Corner</h4>
-                  {["radio"].map((type) => (
-                    <div key={`corner`} className="d-flex align-items-center">
-                      <Form.Check
-                        type={type}
-                        id={`standard`}
-                        label={`Standard`}
-                        name="corner"
-                        inline
-                      />
-                      <Form.Check
-                        type={type}
-                        id={`round`}
-                        label={`Round`}
-                        name="corner"
-                        inline
-                      />
-                    </div>
-                  ))}
-                </div>
-                <div className="labelGroup d-flex align-items-center">
-                  <h4>Quantity</h4>
-                  <Form.Select>
-                    {typeof productDetails?.data?.price === "object" &&
-                      Object.keys(productDetails.data.price)
-                        .filter((item) => item !== "_id")
-                        .map((item) => {
-                          return (
-                            <option key={item} value={item}>
-                              {item}
-                            </option>
-                          );
-                        })}
-                  </Form.Select>
-                </div>
-                <div className="labelGroup d-flex align-items-center">
-                  <h4>Material</h4>
-                  <label>100% Paper</label>
-                </div>
-              </Form>
-              <button
-                onClick={() => setShowBoard(true)}
-                className="btn btn-primary">
-                Create the Design
-              </button>
-              {showBoard && (
-                <div style={{ height: "300px", width: "600px" }}>
-                  <div
-                    style={{
-                      position: "fixed",
-                      top: "0px",
-                      left: "0px",
-                      width: "100vw",
-                      height: "100vh",
-                      background: "lightGrey",
-                      zIndex: "999",
-                    }}>
-                    {
-                      //<Tldraw id={persistenceId} onMount={handleMount} />
-                    }
-                    <div
-                      className="closeButton"
-                      onClick={() => setShowBoard(false)}>
-                      <i className="fa fa-arrow-left" />
-                      <img src={iconImg} alt="closeModal" />
-                    </div>
-                    <DesignTool />
+            <div className="row">
+              <div className="col-12 col-md-6 p-0 pb-3 px-md-3 productPictureAndCarausel">
+                <img
+                  className="productMainPicture"
+                  src={mainImg}
+                  alt="mainImg"
+                />
+              </div>
+              <div className="col-12 col-md-6 productDetails">
+                <h1 className="pb-3">{productDetails?.data?.name}</h1>
+                <p style={{ fontSize: "16px", color: "rgba(0, 0, 0, 0.6)" }}>
+                  {productDetails?.data?.description}
+                </p>
+                <Form>
+                  <div className="labelGroup d-flex align-items-center">
+                    <h4>Shape</h4>
+                    {["radio"].map((type) => (
+                      <div key={`shape`} className="d-flex align-items-center">
+                        <Form.Check
+                          type={type}
+                          id={`square`}
+                          label={`Square`}
+                          name="shape"
+                          inline
+                        />
+                        <Form.Check
+                          type={type}
+                          id={`standard`}
+                          label={`Standard`}
+                          name="shape"
+                          inline
+                        />
+                      </div>
+                    ))}
                   </div>
-                </div>
-              )}
+                  <div className="labelGroup d-flex align-items-center">
+                    <h4>Corner</h4>
+                    {["radio"].map((type) => (
+                      <div key={`corner`} className="d-flex align-items-center">
+                        <Form.Check
+                          type={type}
+                          id={`standard`}
+                          label={`Standard`}
+                          name="corner"
+                          inline
+                        />
+                        <Form.Check
+                          type={type}
+                          id={`round`}
+                          label={`Round`}
+                          name="corner"
+                          inline
+                        />
+                      </div>
+                    ))}
+                  </div>
+                  <div className="labelGroup d-flex align-items-center">
+                    <h4>Quantity</h4>
+                    <Form.Select>
+                      {typeof productDetails?.data?.price === "object" &&
+                        Object.keys(productDetails.data.price)
+                          .filter((item) => item !== "_id")
+                          .map((item) => {
+                            return (
+                              <option key={item} value={item}>
+                                {item}
+                              </option>
+                            );
+                          })}
+                    </Form.Select>
+                  </div>
+                  <div className="labelGroup d-flex align-items-center">
+                    <h4>Material</h4>
+                    <label>100% Paper</label>
+                  </div>
+                </Form>
+                <button
+                  onClick={() => setShowBoard(true)}
+                  className="btn btn-primary">
+                  Create the Design
+                </button>
+                {showBoard && (
+                  <div>
+                    <div
+                      style={{
+                        position: "fixed",
+                        top: "0px",
+                        left: "0px",
+                        width: "100vw",
+                        height: "100vh",
+                        background: "lightGrey",
+                        zIndex: "999",
+                      }}>
+                      {
+                        //<Tldraw id={persistenceId} onMount={handleMount} />
+                      }
+                      <div
+                        className="closeButton"
+                        onClick={() => setShowBoard(false)}>
+                        <i className="fa fa-arrow-left" />
+                        <img src={iconImg} alt="closeModal" />
+                      </div>
+                      <DesignTool />
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </>

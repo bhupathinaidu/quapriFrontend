@@ -84,3 +84,9 @@ ol.breadcrumb {
     width: 20px;
     margin-left: 15px;
 }
+
+@media screen and (max-width: 700px) {
+    .productMainPicture, .productDetails {
+        width: 100vw !important;
+    }
+}
