@@ -264,6 +264,7 @@ export const packagingProps = {
 export const apparelProps = {
   route: "Apparel",
   mainBanner: test_main_banner,
+  id: "tShirt",
   productList: [
     {
       imgUrl: test_plp_product,
@@ -573,9 +574,16 @@ export const signsProps = {
   ],
 };
 
+export const tShirtsProps = {
+  route: "T Shirts",
+  mainBanner: test_main_banner,
+  id: "tShirt"
+}
+
 export const businessCardsProps = {
   route: "Business Cards",
   mainBanner: test_main_banner,
+  id: "businessCard",
   productList: [
     {
       imgUrl: test_plp_product,
@@ -625,56 +633,10 @@ export const businessCardsProps = {
   ],
 };
 
-export const giftHampersProps = {
-  route: "Gift Hampers",
+export const officeSuppliesProps = {
+  route: "Office Supplies",
   mainBanner: test_main_banner,
-  productList: [
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-  ],
+  id: "officeSupply"
 };
 
 export const mailerBoxesProps = {

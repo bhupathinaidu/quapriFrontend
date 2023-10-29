@@ -1,6 +1,6 @@
 import businessCard from "../assets/popularProducts/visitingCard.jpg";
 import tShirt from "../assets/popularProducts/tShirt.jpg";
-import giftHamper from "../assets/popularProducts/giftHamper.jpg";
+import officeSupply from "../assets/popularProducts/officeSupply.jpg";
 import drinkWare from "../assets/popularProducts/drinkWare.jpg";
 import mailerBox from "../assets/popularProducts/mailerBox.jpg";
 import sticker from "../assets/popularProducts/sticker.jpg";
@@ -13,7 +13,7 @@ import keyChain from "../assets/popularProducts/keyChain.jpg";
 
 export const productList = [
   {
-    id: "productListItem1",
+    id: "businessCard",
     imgSrc: businessCard,
     label: "Business Card",
     src: "/business-cards",
@@ -22,13 +22,13 @@ export const productList = [
     id: "productListItem2",
     imgSrc: tShirt,
     label: "T-shirts",
-    src: "/apparel",
+    src: "/tShirts",
   },
   {
     id: "productListItem3",
-    imgSrc: giftHamper,
-    label: "Gift Hampers",
-    src: "/gift-hampers",
+    imgSrc: officeSupply,
+    label: "Office Supplies",
+    src: "/office-supplies",
   },
   {
     id: "productListItem4",

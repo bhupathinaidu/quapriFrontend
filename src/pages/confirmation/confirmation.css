@@ -1,0 +1,57 @@
+.confirmHeading {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px;
+    text-decoration: underline;
+}
+
+.imageContainer {
+    width: 283px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.imageContainer img {
+    height: 150px;
+    width: 283px;
+}
+
+.confirmProductDetails h1 {
+    font-size: 20px;
+}
+
+.confirmationWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.orderSummary {
+    border: 1px solid #efefef;
+    padding: 10px 20px;
+    position: relative;
+    width: 357px;
+}
+
+.orderSummary h1 {
+    font-size: 20px;
+}
+
+.orderSummary button {
+    width: 315px;
+    background: #2B2353;
+    color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.closeConfirm {
+    position: absolute;
+    right: 30px;
+    border: none;
+    width: 25px;
+    top: 25px;
+    border-radius: 25px;
+    background: #efefef;
+}
