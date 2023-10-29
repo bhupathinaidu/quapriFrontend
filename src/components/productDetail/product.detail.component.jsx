@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import mainImg from "../../assets/test_plp_product.jpeg";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import "./product.detail.component.css";
 import {
   productDetail,
@@ -12,23 +12,37 @@ import "@tldraw/tldraw/tldraw.css";
 import DesignTool from "../canvas/canvas.component";
 import Form from "react-bootstrap/Form";
 import iconImg from "../../assets/favico.png";
+import { setConfirm } from "../../store/confirm/confirm.reducer";
 
-const ProductDetailComponent = ({ route, subRoute }) => {
+const ProductDetailComponent = ({ route, routePath }) => {
   const dispatch = useDispatch();
   const productData = useSelector(productDetail);
   const { productDetails, isLoading, isError } = productData;
-  const [showBoard, setShowBoard] = useState(false);
+  const [showBoard, setShowBoard] = useState("none");
+  const [shapeSelected, setShapeSelected] = useState("");
+  const [selectedQuantity, setSelectedQuantity] = useState("");
+  
 
-  useEffect(() => {
-    dispatch(fetchProductById("QPVPPC"));
+  const saveAndProceed = (imgUrl) => {
+    const price = productDetails?.data ? Object.values(productDetails?.data?.price)[Object.keys(productDetails?.data?.price).indexOf(selectedQuantity)]: 0;
+    dispatch(setConfirm({
+      name: productDetails?.data?.name,
+      shape: shapeSelected,
+      materials: productDetails?.data?.material,
+      quantity: selectedQuantity,
+      cost: price,
+      imgUrl: imgUrl
+    }))
+  }
+
+ useEffect(() => {
+    const productId = window.location.search.replace('?=', '')
+    dispatch(fetchProductById(productId));
   }, []);
 
-  // const persistenceId = "tldraw-example";
-
-  // const handleMount = (app) => {
-  //   // You can use the app API here! e.g. app.selectAll()
-  //   app.selectAll();
-  // };
+  useEffect(() => {
+    if(productDetails?.data) setSelectedQuantity(Object.keys(productDetails?.data?.price)[0])
+  }, [productDetails?.data?.price])
 
   return (
     <div
@@ -37,6 +51,7 @@ const ProductDetailComponent = ({ route, subRoute }) => {
         position: "relative",
         minHeight: "650px",
       }}>
+
       {isLoading ? (
         <h1 style={{ height: "500px", textAlign: "center" }}>...Loading</h1>
       ) : (
@@ -48,17 +63,17 @@ const ProductDetailComponent = ({ route, subRoute }) => {
                   <Link to="/">Home</Link>
                 </li>
                 <li className="breadcrumb-item">
-                  <Link to="/same-day-delivery">{route}</Link>
+                  <Link to={routePath}>{route}</Link>
                 </li>
                 <li className="breadcrumb-item">
-                  <Link to="same-day-business-cards">{subRoute}</Link>
+                  <Link to="#">{productDetails?.data?.name}</Link>
                 </li>
               </ol>
             </nav>
           </div>
           <div className="container productDetailWrapper">
             <div className="col-12 col-md-6 p-0 pb-3 px-md-3 productPictureAndCarausel">
-              <img className="productMainPicture" src={mainImg} alt="mainImg" />
+              <img className="productMainPicture" src={"http://localhost:8000" + productDetails?.data?.imageUrls[0]} alt="mainImg" />
             </div>
             <div className="col-12 col-md-6 productDetails">
               <h1 className="pb-3">{productDetails?.data?.name}</h1>
@@ -76,6 +91,7 @@ const ProductDetailComponent = ({ route, subRoute }) => {
                         label={`Square`}
                         name="shape"
                         inline
+                        onChange={() => setShapeSelected("square")}
                       />
                       <Form.Check
                         type={type}
@@ -83,6 +99,7 @@ const ProductDetailComponent = ({ route, subRoute }) => {
                         label={`Standard`}
                         name="shape"
                         inline
+                        onChange={() => setShapeSelected("standard")}
                       />
                     </div>
                   ))}
@@ -110,9 +127,9 @@ const ProductDetailComponent = ({ route, subRoute }) => {
                 </div>
                 <div className="labelGroup d-flex align-items-center">
                   <h4>Quantity</h4>
-                  <Form.Select>
+                  <Form.Select onChange={e => setSelectedQuantity(e.target.value)}>
                     {typeof productDetails?.data?.price === "object" &&
-                      Object.keys(productDetails.data.price)
+                      Object.keys(productDetails?.data?.price)
                         .filter((item) => item !== "_id")
                         .map((item) => {
                           return (
@@ -129,11 +146,18 @@ const ProductDetailComponent = ({ route, subRoute }) => {
                 </div>
               </Form>
               <button
-                onClick={() => setShowBoard(true)}
+                onClick={() => setShowBoard("create")}
                 className="btn btn-primary">
                 Create the Design
               </button>
-              {showBoard && (
+
+              <button
+                onClick={() => setShowBoard("upload")}
+                className="btn btn-light"
+                style={{ marginLeft: "20px", background: "burlywood" }}>
+                Upload the Design
+              </button>
+              {showBoard !== "none" && (
                 <div style={{ height: "300px", width: "600px" }}>
                   <div
                     style={{
@@ -145,16 +169,14 @@ const ProductDetailComponent = ({ route, subRoute }) => {
                       background: "lightGrey",
                       zIndex: "999",
                     }}>
-                    {
-                      //<Tldraw id={persistenceId} onMount={handleMount} />
-                    }
                     <div
                       className="closeButton"
-                      onClick={() => setShowBoard(false)}>
+                      onClick={() => setShowBoard("none")}>
                       <i className="fa fa-arrow-left" />
                       <img src={iconImg} alt="closeModal" />
                     </div>
-                    <DesignTool />
+                    <DesignTool board={showBoard} saveAndProceed={(imgUrl) => saveAndProceed(imgUrl)} />
+
                   </div>
                 </div>
               )}

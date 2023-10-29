@@ -3,7 +3,7 @@ import HomePage from "./pages/homepage/homepage";
 import HeaderComponent from "./components/header/header.component";
 import Footer from "./components/footer/footer.component";
 import ProductListingComponent from "./components/productListing/product.listing.component";
-import { acrylicDeskStandsProps, apparelProps, arcylicPrintsProps, awardsProps, bagPacksProps, bannersProps, bookletsProps, businessCardsProps, corporateGiftsProps, courierPolyBagsProps, desktopItemsProps, diariesProps, drinkwareProps, flexiblePouchesProps, foodCakeBoxesProps, giftHampersProps, greetingCardsProps, invitationCardsProps, keyChainsProps, labelsProps, laminatedCardsProps, largeFormatStickerProps, mailerBoxesProps, marketingProps, namePlatesProps, packagingProps, paperBagsProps, pensProps, photoBooksProps, photoFramesProps, photoMugsProps, photoPrintsProps, photogGiftsProps, postersProps, recycledTShirtsProps, sameDayDeliveryProps, sheetStickersProps, signsProps, sleevedMailerBoxesProps, standeesProps, stationeryProps, stickersLabelsProps, sunBoardPostersProps, wallDecalsProps } from "./commom/listing.constants";
+import { acrylicDeskStandsProps, apparelProps, arcylicPrintsProps, awardsProps, bagPacksProps, bannersProps, bookletsProps, businessCardsProps, corporateGiftsProps, courierPolyBagsProps, desktopItemsProps, diariesProps, drinkwareProps, flexiblePouchesProps, foodCakeBoxesProps, giftHampersProps, greetingCardsProps, invitationCardsProps, keyChainsProps, labelsProps, laminatedCardsProps, largeFormatStickerProps, mailerBoxesProps, marketingProps, namePlatesProps, packagingProps, paperBagsProps, pensProps, photoBooksProps, photoFramesProps, photoMugsProps, officeSuppliesProps, photoPrintsProps, photogGiftsProps, postersProps, recycledTShirtsProps, sameDayDeliveryProps, sheetStickersProps, signsProps, sleevedMailerBoxesProps, standeesProps, stationeryProps, stickersLabelsProps, sunBoardPostersProps, wallDecalsProps, tShirtsProps } from "./commom/listing.constants";
 import ProductDetailComponent from "./components/productDetail/product.detail.component";
 import ScrollToTopComponent from "./components/scrollToTop/scrollToTop.component";
 
@@ -24,13 +24,31 @@ function App() {
         <Route path="/drinkware" element={<ProductListingComponent properties={drinkwareProps}/>}></Route>
         <Route path="/packaging" element={<ProductListingComponent properties={packagingProps}/>}></Route>
         <Route path="/apparel" element={<ProductListingComponent properties={apparelProps}/>}></Route>
+        <Route path="/apparel/customizable-products"
+            element={<ProductDetailComponent route={"Apparel"}
+              routePath={"/apparel"} />}>
+          </Route>
+        <Route path="/tShirts" element={<ProductListingComponent properties={tShirtsProps}/>}></Route>
+        <Route path="/tShirts/customizable-products"
+            element={<ProductDetailComponent route={"T-Shirts"}
+              routePath={"/tShirts"} />}>
+          </Route>
+        <Route path="/office-supplies" element={<ProductListingComponent properties={officeSuppliesProps}/>}></Route>
+        <Route path="/office-supplies/customizable-products"
+            element={<ProductDetailComponent route={"Office Supplies"}
+              routePath={"/office-supplies"} />}>
+          </Route>
         <Route path="/marketing" element={<ProductListingComponent properties={marketingProps}/>}></Route>
         <Route path="/awards" element={<ProductListingComponent properties={awardsProps}/>}></Route>
         <Route path="/photo-gifts" element={<ProductListingComponent properties={photogGiftsProps}/>}></Route>
         <Route path="/stickers-labels" element={<ProductListingComponent properties={stickersLabelsProps}/>}></Route>
         <Route path="/signs" element={<ProductListingComponent properties={signsProps}/>}></Route>
         <Route path="/business-cards" element={<ProductListingComponent properties={businessCardsProps}/>}></Route>
-        <Route path="/gift-hampers" element={<ProductListingComponent properties={giftHampersProps}/>}></Route>
+        <Route path="/business-cards/customizable-products"
+            element={<ProductDetailComponent route={"Business cards"}
+              routePath={"/business-cards"} />}>
+          </Route>
+        {/*<Route path="/gift-hampers" element={<ProductListingComponent properties={giftHampersProps}/>}></Route>*/}
         <Route path="/mailer-boxes" element={<ProductListingComponent properties={mailerBoxesProps}/>}></Route>
         <Route path="/bag-packs" element={<ProductListingComponent properties={bagPacksProps}/>}></Route>
         <Route path="/name-plates" element={<ProductListingComponent properties={namePlatesProps}/>}></Route>
@@ -65,6 +83,7 @@ function App() {
         <Route path="/large-format-sticker" element={<ProductListingComponent properties={largeFormatStickerProps}/>}></Route>
         <Route path="/wall-decals" element={<ProductListingComponent properties={wallDecalsProps}/>}></Route>
         <Route path="/sun-board-poster" element={<ProductListingComponent properties={sunBoardPostersProps}/>}></Route>
+        <Route path="/add-to-cart" element={<h1>Add to cart Page</h1>}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./product.listing.component.css";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchProductsByCategory, productListData } from "../../store/product/productList.reducer";
 
 const ProductListingComponent = ({ properties }) => {
-  const { route, mainBanner, productList } = properties;
+  const { route, mainBanner, productList, id } = properties;
+  const dispatch = useDispatch();
+  const productListValue = useSelector(productListData);
+
+  useEffect(() => {
+    dispatch(fetchProductsByCategory(id))
+  }, [id])
+  console.log({ productListValue })
+ 
   return (
     <div>
       <div className="container mt-2">
@@ -13,7 +23,7 @@ const ProductListingComponent = ({ properties }) => {
               <Link to="/">Home</Link>
             </li>
             <li className="breadcrumb-item">
-              <Link to="/same-day-delivery">{route}</Link>
+              <Link to="#">{route}</Link>
             </li>
           </ol>
         </nav>
@@ -36,15 +46,15 @@ const ProductListingComponent = ({ properties }) => {
         </div>
       </div>
       <div style={{ marginBottom: "30px" }} className="container productList">
-        {productList.map((item) => (
-          <Link to="/same-day-delivery/customizable-products/same-day-business-cards">
+        {productListValue.isLoading ? <p>...Loading</p> : productListValue?.productList?.data && productListValue.productList.data.map((item) => (
+          <Link to={`${window.location.pathname}/customizable-products?=${item.productId}`}>
             <div>
               <img
                 style={{ height: "285px", width: "285px" }}
-                src={item.imgUrl}
+                src={"http://localhost:8000" + item.imageUrls[0]}
               />
-              <p className="productPrice">{item.label}</p>
-              <p className="productName">{item.price}</p>
+              <p className="productPrice">{item.name}</p>
+              <p className="productName">{'₹' + item.price[Object.keys(item.price)[0]].toFixed(2)}</p>
             </div>
           </Link>
         ))}

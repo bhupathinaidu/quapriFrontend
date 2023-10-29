@@ -3,6 +3,7 @@
     margin: auto;
     align-items: center;
     height: 100%;
+    font-size: 14px;
 }
 
 .canvasWrapper {
@@ -13,29 +14,33 @@
     position: relative;
 }
 
-.canvas-wrapper {
+.bgColor{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.bgColor .removeButton {
     position: absolute;
-    top: calc(50% - 180px);
+    left: 130px;
+    font-size: 12px;
 }
 
-.canvas-wrapper > * {
-    width: 114px;
-    margin-left: 30px;
-    height: 65px;
-    margin-bottom: 30px;
-    text-align: center;
-    border: 1px solid #000;
-    box-shadow: rgb(0 0 0 / 32%) 0px 2px 6px 0px;
+.bgColor p, .add p {
+    color: cadetblue;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
-input[type="file"] {
-    display: none;
+.bgColor input {
+    margin-bottom: 10px;
 }
 
-label[for="fileInput"] {
-    padding: 20px 15px;
+.bgColor label {
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .canvasContainer {
@@ -44,4 +49,170 @@ label[for="fileInput"] {
     background: #fff;
     position: absolute;
     left: calc(50% - 256px);
+}
+
+.uploadImage {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.uploadImage input{
+    visibility: hidden;
+    width: 1px;
+}
+
+.uploadImage img{
+    height: 20px;
+    width: 20px;
+}
+
+.uploadImage label {
+    border: 1px solid #efefef;
+    width: 90%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.addText {
+  display: flex;
+}
+.addText, .addShape {
+    margin-bottom: 10px;
+}
+
+.addText button, .addShape button {
+    width: 38%;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+}
+
+.addTextFeatures {
+    margin-left: 5px;
+    position: relative;
+}
+.addTextFeatures i {
+    border: 1px solid #efefef;
+    padding: 8px 16.5px;
+    border-radius: 5px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.addTextFeatures .active {
+    background-color: blue;
+    color: white;
+}
+
+.addTextFeatures input {
+    height: 15px;
+    width: 143px;
+    position: absolute;
+    left: 2px;
+    top: 34px;
+}
+
+.addShape{
+    display: flex;
+}
+
+.addShapeFeatures {
+    margin-left: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 56%;
+}
+
+.addShapeFeatures select {
+    height: 25px;
+    width: 40%;
+}
+
+.shapeBorderColor, .shapeBackgroundColor {
+    margin-left: 5px;
+    border: 1px solid #efefef;
+    padding: 2.5px 6px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.shapeBackgroundColor {
+    margin-left: 0;
+    margin-top: 2px;
+}
+
+.shapeBorderColor input, .shapeBackgroundColor input {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+.shapeBackgroundColor input {
+    margin-left: 16px;
+}
+
+.removeSelected{
+    margin-bottom: 15px;
+}
+
+.removeSelected button {
+    background: #fff;
+    border: 1px solid red;
+    border-radius: 5px;
+    width: 90%;
+    padding: 5px;
+    color: red;
+}
+
+.save {
+    position: absolute;
+    bottom: 30px;
+}
+
+.save button {
+    background-color: #FAA819;
+    width: 270px;
+    color: #fff;
+    border: #faa819;
+    padding: 5px 0;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.overlay {
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: grey;
+    opacity: 0.8;
+    z-index: 99;
+}
+
+.overlayWrapper {
+    background-color: #fff;
+    width: 800px;
+    margin: 0px auto;
+    padding: 20px;
+    position: relative;
+}
+
+.overLayContainer {
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    align-items: center;
 }
