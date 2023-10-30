@@ -11,7 +11,6 @@ import { Tldraw, TldrawEditor } from "@tldraw/tldraw";
 import "@tldraw/tldraw/tldraw.css";
 import DesignTool from "../canvas/canvas.component";
 import Form from "react-bootstrap/Form";
-import iconImg from "../../assets/favico.png";
 
 const ProductDetailComponent = ({ route, subRoute }) => {
   const dispatch = useDispatch();
@@ -156,8 +155,7 @@ const ProductDetailComponent = ({ route, subRoute }) => {
                       <div
                         className="closeButton"
                         onClick={() => setShowBoard(false)}>
-                        <i className="fa fa-arrow-left" />
-                        <img src={iconImg} alt="closeModal" />
+                        <i className="fa fa-arrow-left" /> <span>Go Back</span>
                       </div>
                       <DesignTool />
                     </div>

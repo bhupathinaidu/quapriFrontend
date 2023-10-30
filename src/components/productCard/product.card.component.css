@@ -12,6 +12,8 @@
 .popularProducts {
     display: flex;
     flex-wrap: wrap;
+    flex-flow: wrap;
+    justify-content: space-between;
 }
 
 .popularProduct {
@@ -49,7 +51,7 @@
     }
 
     .popularProduct {
-        width: 160px;
+        width: auto;
     }
 
     .popularProduct img {
