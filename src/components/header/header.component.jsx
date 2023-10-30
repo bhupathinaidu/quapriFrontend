@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./header.component.css";
 import logo from "../../assets/quapri_logo.png";
 import SearchBoxComponent from "../searchBox/searchbox.component";
@@ -8,9 +8,16 @@ import Navbar from "react-bootstrap/Navbar";
 import Login from "../login/login.component";
 import NavbarComponent from "../navbar/navbar.component";
 import ServiceNavbarComponent from "../servicesNav/servicesNav.component";
+import { useSelector } from "react-redux";
+import { user } from "../../store/login/login.reducer";
 
 const HeaderComponent = () => {
   const [loginModalShow, setLoginModalShow] = useState(false);
+  const userData = useSelector(user);
+
+  useEffect(() => {
+    console.log({userData})
+  }, [userData])
   return (
     <>
       <NavbarComponent />

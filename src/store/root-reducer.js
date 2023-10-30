@@ -5,11 +5,13 @@ import { searchReducer } from "./search/search.reducer";
 import { productReducer } from "./product/product.reducer";
 import { productListReducer } from "./product/productList.reducer";
 import { confirmReducer } from "./confirm/confirm.reducer";
+import { loginReducer } from "./login/login.reducer";
 
 export const rootReducer = combineReducers({
     test: testReducer,
     search: searchReducer,
     productDetails: productReducer,
     productList: productListReducer,
-    confirm: confirmReducer
+    confirm: confirmReducer,
+    user: loginReducer
 })

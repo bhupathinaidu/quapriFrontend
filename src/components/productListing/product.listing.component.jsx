@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./product.listing.component.css";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProductsByCategory, productListData } from "../../store/product/productList.reducer";
+import { origin } from "../../api/origin";
 
 const ProductListingComponent = ({ properties }) => {
   const { route, mainBanner, productList, id } = properties;
@@ -51,7 +52,7 @@ const ProductListingComponent = ({ properties }) => {
             <div>
               <img
                 style={{ height: "285px", width: "285px" }}
-                src={"http://localhost:8000" + item.imageUrls[0]}
+                src={origin() + item.imageUrls[0]}
               />
               <p className="productPrice">{item.name}</p>
               <p className="productName">{'₹' + item.price[Object.keys(item.price)[0]].toFixed(2)}</p>

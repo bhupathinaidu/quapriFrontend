@@ -6,14 +6,30 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./login.component.css";
 import Signup from "../signUp/signup.component";
+import { useDispatch } from "react-redux";
+import { fetchUser } from "../../store/login/login.reducer";
 
 function Login(props) {
   const [signupModalShow, setSignupModalShow] = useState(false);
+  const [loginDetails, setLoginDetails] = useState({
+    username: "",
+    password: ""
+  })
+  const dispatch = useDispatch();
 
   const closeModal = () => {
     setSignupModalShow(true);
     props.onHide(false);
   };
+
+  const handleClick = () => {
+    dispatch(fetchUser({username: loginDetails.username, password: loginDetails.password}))
+    console.log({loginDetails})
+  }
+
+  const handleChange = (name, val) => {
+    setLoginDetails({...loginDetails, [name]: val})
+  }
 
   return (
     <>
@@ -27,16 +43,16 @@ function Login(props) {
           <Modal.Title id="contained-modal-title">Log In</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form>
+          <Form onSubmit={e => e.preventDefault()}>
             <Form.Group className="mb-3" controlId="formBasicLoginEmail">
               <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" required />
+              <Form.Control onChange={e => handleChange("username", e.target.value)} type="email" placeholder="Enter email" required />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicLoginPassword">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" required />
+              <Form.Control onChange={e => handleChange("password", e.target.value)} type="password" placeholder="Password" required />
             </Form.Group>
-            <button className="btn btn-dark px-5" type="submit">
+            <button className="btn btn-dark px-5" onClick={handleClick}>
               Sign In
             </button>
           </Form>
