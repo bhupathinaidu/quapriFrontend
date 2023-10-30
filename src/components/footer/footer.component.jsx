@@ -10,7 +10,7 @@ const Footer = () => {
     <Container className="footer">
       <Row>
         <Col>
-          <strong>Find Stores</strong>
+          <strong>Delivery Dark Stores</strong>
           <div className="list-group">
             <Link to="#">Bangalore</Link>
             <Link to="#">Gurgoan</Link>
@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
         </Col>
         <Col>
-          <strong>Find Stores</strong>
+          <strong>Quick Links</strong>
           <div className="list-group">
             <Link to="#">Help</Link>
             <Link to="#">Business Pricing</Link>
@@ -50,7 +50,7 @@ const Footer = () => {
           <div className="d-flex align-items-center">
             <i className="fa fa-phone"></i>
             <span className="ms-3">
-              <Link to="tel:+911234567890">+91-1234567890</Link>
+              <Link to="tel:+917892232789">+91-7892232789</Link>
             </span>
           </div>
           <div className="d-flex align-items-center mt-2">
@@ -89,7 +89,7 @@ const Footer = () => {
       <Row className="secondaryFooter">
         <Col>
           <p>
-            <span>©</span>2023 Quapri Services Pvt. Ltd.. All Rights Reserved.
+            <span>©</span>2023 Quapri Services Pvt. Ltd. All Rights Reserved.
           </p>
         </Col>
       </Row>

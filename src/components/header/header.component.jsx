@@ -16,8 +16,8 @@ const HeaderComponent = () => {
   const userData = useSelector(user);
 
   useEffect(() => {
-    console.log({userData})
-  }, [userData])
+    console.log({ userData });
+  }, [userData]);
   return (
     <>
       <NavbarComponent />
@@ -43,7 +43,7 @@ const HeaderComponent = () => {
                 <span className="callUs link">
                   <i className="fa fa-phone"></i>
                   <span className="mob">
-                    +91-1234567890
+                    +91-7892232789
                     <br />
                     <span className="callUsText">
                       call us to place an order

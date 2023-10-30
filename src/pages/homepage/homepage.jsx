@@ -117,21 +117,18 @@ const HomePage = () => {
               <h2>About Quapri</h2>
               <h5>Print and Gifting made easy!</h5>
               <div className="pt-3">
-                We are India's largest print-on-demand platform with a vision to
-                be the world's largest. We have over 15 years of experience in
-                the print industry, 28 retail stores across 6 cities, and have
-                serviced more than 1 Million customers online & offline.
-              </div>
-              <div className="pt-3">
-                From Business Cards to Signage to Employee Joining Kits -- since
-                2006, Quapri has helped 10 lakh+ small, medium & some of India's
-                largest businesses like Google, Accenture & PhonePe.
+                Quapri, India's leading print-on-demand platform, aspires to
+                become the global leader. With over two decades of expertise in
+                the print industry and a network of delivery dark stores
+                spanning six cities, we've served 50,000 businesses, from small
+                startups to large enterprises, since 2015.
               </div>
               <div className="pt-3 py-3">
-                Quapri is headquartered in Bangalore, India, with a 50,000+ sq.
-                ft production facility. From the first store in Koramangala,
-                Bangalore, Quapri has launched 28 retail stores across 6-cities.
-                Order from Quapri.in or in-store or talk to our teams today.
+                Headquartered in Bangalore, India, our state-of-the-art 10,000+
+                sq. ft production facility empowers us to deliver top-quality
+                products. Place your orders at{" "}
+                <a href="https://quapri.in/">Quapri.in</a> or get in touch with
+                our dedicated teams today.
               </div>
             </Col>
           </Row>

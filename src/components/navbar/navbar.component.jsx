@@ -18,9 +18,6 @@ const NavbarComponent = () => {
           </ul>
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <span className="nav-link"> Store Locator</span>
-            </li>
-            <li>
               <span className="nav-link">Sample Kit</span>
             </li>
             <li>
