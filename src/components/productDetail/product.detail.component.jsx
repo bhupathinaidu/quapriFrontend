@@ -13,6 +13,7 @@ import DesignTool from "../canvas/canvas.component";
 import Form from "react-bootstrap/Form";
 import iconImg from "../../assets/favico.png";
 import { setConfirm } from "../../store/confirm/confirm.reducer";
+import { origin } from "../../api/origin";
 
 const ProductDetailComponent = ({ route, routePath }) => {
   const dispatch = useDispatch();
@@ -73,7 +74,7 @@ const ProductDetailComponent = ({ route, routePath }) => {
           </div>
           <div className="container productDetailWrapper">
             <div className="col-12 col-md-6 p-0 pb-3 px-md-3 productPictureAndCarausel">
-              <img className="productMainPicture" src={"http://localhost:8000" + productDetails?.data?.imageUrls[0]} alt="mainImg" />
+              <img className="productMainPicture" src={origin() + productDetails?.data?.imageUrls[0]} alt="mainImg" />
             </div>
             <div className="col-12 col-md-6 productDetails">
               <h1 className="pb-3">{productDetails?.data?.name}</h1>
