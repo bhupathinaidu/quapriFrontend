@@ -50,7 +50,7 @@ const Footer = () => {
           <div className="d-flex align-items-center">
             <i className="fa fa-phone"></i>
             <span className="ms-3">
-              <Link to="tel:+917892232789">+91-7892232789</Link>
+              <Link to="tel:+917892232789">+91-789-2232-789</Link>
             </span>
           </div>
           <div className="d-flex align-items-center mt-2">

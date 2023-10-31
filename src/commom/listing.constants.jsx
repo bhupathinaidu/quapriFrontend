@@ -577,8 +577,8 @@ export const signsProps = {
 export const tShirtsProps = {
   route: "T Shirts",
   mainBanner: test_main_banner,
-  id: "tShirt"
-}
+  id: "tShirt",
+};
 
 export const businessCardsProps = {
   route: "Business Cards",
@@ -636,7 +636,7 @@ export const businessCardsProps = {
 export const officeSuppliesProps = {
   route: "Office Supplies",
   mainBanner: test_main_banner,
-  id: "officeSupply"
+  id: "officeSupply",
 };
 
 export const mailerBoxesProps = {
@@ -1318,105 +1318,13 @@ export const photoBooksProps = {
 export const invitationCardsProps = {
   route: "Invitation Cards",
   mainBanner: test_main_banner,
-  productList: [
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-  ],
+  id: "invitation",
 };
 
 export const greetingCardsProps = {
   route: "Greeting Cards",
   mainBanner: test_main_banner,
-  productList: [
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-    {
-      imgUrl: test_plp_product,
-      label: "Test",
-      price: "₹120.00",
-    },
-  ],
+  id: "greetingCards",
 };
 
 export const desktopItemsProps = {
@@ -2405,4 +2313,16 @@ export const sunBoardPostersProps = {
       price: "₹120.00",
     },
   ],
+};
+
+export const noteBooksProps = {
+  route: "NoteBooks",
+  mainBanner: test_main_banner,
+  id: "notebook",
+};
+
+export const accessoriesProps = {
+  route: "Accessories",
+  mainBanner: test_main_banner,
+  id: "accessories",
 };

@@ -104,3 +104,19 @@
         padding: 0;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px){
+    #responsive-navbar-nav .navbar-right {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .serviceList {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .mainBanner {
+        width: 100%;
+    }
+}

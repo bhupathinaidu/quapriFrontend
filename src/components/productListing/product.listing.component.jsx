@@ -2,7 +2,10 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./product.listing.component.css";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchProductsByCategory, productListData } from "../../store/product/productList.reducer";
+import {
+  fetchProductsByCategory,
+  productListData,
+} from "../../store/product/productList.reducer";
 import { origin } from "../../api/origin";
 
 const ProductListingComponent = ({ properties }) => {
@@ -11,10 +14,10 @@ const ProductListingComponent = ({ properties }) => {
   const productListValue = useSelector(productListData);
 
   useEffect(() => {
-    dispatch(fetchProductsByCategory(id))
-  }, [id])
-  console.log({ productListValue })
- 
+    dispatch(fetchProductsByCategory(id));
+  }, [id]);
+  console.log({ productListValue });
+
   return (
     <div>
       <div className="container mt-2">
@@ -47,18 +50,33 @@ const ProductListingComponent = ({ properties }) => {
         </div>
       </div>
       <div style={{ marginBottom: "30px" }} className="container productList">
-        {productListValue.isLoading ? <p>...Loading</p> : productListValue?.productList?.data && productListValue.productList.data.map((item) => (
-          <Link to={`${window.location.pathname}/customizable-products?=${item.productId}`}>
-            <div>
-              <img
-                style={{ height: "285px", width: "285px" }}
-                src={origin() + item.imageUrls[0]}
-              />
-              <p className="productPrice">{item.name}</p>
-              <p className="productName">{'₹' + item.price[Object.keys(item.price)[0]].toFixed(2)}</p>
-            </div>
-          </Link>
-        ))}
+        {productListValue.isLoading ? (
+          <p>...Loading</p>
+        ) : (
+          productListValue?.productList?.data &&
+          productListValue.productList.data.map((item) => (
+            <Link
+              to={`${window.location.pathname}/customizable-products?=${item.productId}`}>
+              <div>
+                <img
+                  style={{ height: "285px", width: "285px" }}
+                  src={origin() + item.imageUrls[0]}
+                />
+                <p className="productPrice">{item.name}</p>
+                <p className="productName">
+                  {"₹" +
+                    (
+                      <span>
+                        item.price[Object.keys(item.price)[0]].toFixed(2)
+                      </span>
+                    ) +
+                    " per " +
+                    Object.keys(item.price)[0]}
+                </p>
+              </div>
+            </Link>
+          ))
+        )}
       </div>
     </div>
   );

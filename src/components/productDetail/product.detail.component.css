@@ -84,3 +84,23 @@ ol.breadcrumb {
     width: 20px;
     margin-left: 15px;
 }
+
+@media screen and (max-width: 700px) {
+    .productMainPicture, .productDetails {
+        width: 100vw !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .productMainPicture {
+        width: 100%;
+    }
+
+    .canvasWrapper {
+        width: 210px !important;
+    }
+
+    .canvas-wrapper {
+        top: 170px !important;
+    }
+}

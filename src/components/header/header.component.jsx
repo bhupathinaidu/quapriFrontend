@@ -43,7 +43,7 @@ const HeaderComponent = () => {
                 <span className="callUs link">
                   <i className="fa fa-phone"></i>
                   <span className="mob">
-                    +91-7892232789
+                    +91-789-2232-789
                     <br />
                     <span className="callUsText">
                       call us to place an order
