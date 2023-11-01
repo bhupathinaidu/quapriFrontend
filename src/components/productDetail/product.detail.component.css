@@ -31,8 +31,9 @@ ol.breadcrumb {
 }
 
 .productMainPicture {
-    height: 383px;
-    width: 575px; 
+    /* height: 383px;
+    width: 575px;  */
+    width: 100%;
 }
 
 .productDetailWrapper {
