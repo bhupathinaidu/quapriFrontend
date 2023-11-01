@@ -18,9 +18,9 @@ import ProductCardComponent from "../../components/productCard/product.card.comp
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import packageImg from "../../assets/packaging-img.PNG";
-import singageImg from "../../assets/singage.PNG";
-import returnImg from "../../assets/return.PNG";
+import packageImg from "../../assets/packaging-img.jpg";
+import singageImg from "../../assets/singage.jpg";
+import returnImg from "../../assets/easy_return.jpg";
 
 const HomePage = () => {
   const user = useSelector(currentUser);
@@ -69,13 +69,23 @@ const HomePage = () => {
               <h2>Packaging Materials</h2>
               <h5>Branding | Product Packaging</h5>
               <div>
-                Packages are designed to protect their products from damage
-                during transportation, handling, and storage. A business depends
-                heavily on the quality of its materials. Environmentally
-                friendly packaging is usually preferred by customers. Today,
-                innovative, reusable, and sustainable packaging are being
-                created every day. Take advantage of Quapri's broad packaging
-                range, and ace your business.
+                The main purpose of packaging is to keep products safe when
+                they're being moved, touched, or stored. A business's success
+                relies significantly on the quality of the materials used for
+                packaging. Many customers these days like packaging that is good
+                for the environment. There's a constant stream of new and
+                creative packaging options that are eco-friendly, can be used
+                again, and are sustainable.
+              </div>
+              <div>
+                In this evolving landscape, you can make the most of the wide
+                range of packaging choices offered by Quapri to give your
+                business a significant advantage. Good packaging doesn't just
+                protect your products during transportation, handling, and
+                storage; it also helps maintain their quality. When you opt for
+                environmentally friendly and sustainable packaging, you not only
+                cater to the preferences of eco-conscious consumers but also
+                promote responsible business practices that benefit the planet.
               </div>
               <button className="btn btn-primary mt-3">Read More</button>
             </Col>
@@ -87,13 +97,18 @@ const HomePage = () => {
               <h2>Packaging Materials</h2>
               <h5>Branding | Product Packaging</h5>
               <div>
-                Packages are designed to protect their products from damage
-                during transportation, handling, and storage. A business depends
-                heavily on the quality of its materials. Environmentally
-                friendly packaging is usually preferred by customers. Today,
-                innovative, reusable, and sustainable packaging are being
-                created every day. Take advantage of Quapri's broad packaging
-                range, and ace your business.
+                In light of these trends, you can leverage the extensive array
+                of packaging choices offered by Quapri to elevate your business
+                to new heights. Whether it's safeguarding your products during
+                transportation, ensuring they remain in top condition during
+                handling, or preserving their quality while in storage, the
+                right packaging is instrumental in achieving these goals.
+                Moreover, by embracing eco-conscious and sustainable packaging
+                solutions, you not only cater to the preferences of
+                environmentally aware consumers but also contribute to a greener
+                and more responsible approach to business practices. With
+                Quapri's diverse packaging offerings, you can position your
+                business for success by making the right packaging choices.
               </div>
               <button className="btn btn-primary mt-3">Read More</button>
             </Col>
@@ -117,18 +132,46 @@ const HomePage = () => {
               <h2>About Quapri</h2>
               <h5>Print and Gifting made easy!</h5>
               <div className="pt-3">
-                Quapri, India's leading print-on-demand platform, aspires to
-                become the global leader. With over two decades of expertise in
-                the print industry and a network of delivery dark stores
-                spanning six cities, we've served 50,000 businesses, from small
-                startups to large enterprises, since 2015.
+                Quapri, the foremost print-on-demand platform in India, has set
+                its sights on achieving global leadership. Drawing upon more
+                than 20 years of valuable experience in the print industry,
+                coupled with an extensive network of delivery dark stores across
+                six cities, Quapri has been catering to a diverse clientele of
+                50,000 businesses since its establishment in 2015. These
+                businesses span the spectrum from small startups to large
+                enterprises.
+              </div>
+              <div className="pt-3">
+                With its rich history and expertise, Quapri is at the forefront
+                of the print-on-demand sector in India. The company's vision
+                extends beyond national borders, as it aspires to assume a
+                prominent role on the global stage. Through a commitment to
+                quality, innovation, and a strong network of delivery
+                facilities, Quapri aims to provide exceptional services to
+                clients not only in India but also on an international scale,
+                positioning itself as a frontrunner in the ever-evolving
+                print-on-demand industry.
+              </div>
+              <div className="pt-3">
+                Based in Bangalore, India, our cutting-edge production facility
+                spans over 10,000 square feet, enabling us to provide
+                high-quality products. You can easily make orders on our
+                website, Quapri.in, or reach out to our dedicated teams for
+                assistance.
               </div>
               <div className="pt-3 py-3">
-                Headquartered in Bangalore, India, our state-of-the-art 10,000+
-                sq. ft production facility empowers us to deliver top-quality
-                products. Place your orders at{" "}
-                <a href="https://quapri.in/">Quapri.in</a> or get in touch with
-                our dedicated teams today.
+                Our headquarters are located in Bangalore, India, and we take
+                pride in our modern production facility that covers more than
+                10,000 square feet. This advanced facility equips us with the
+                capabilities to produce and deliver top-quality products. If
+                you're looking to place orders, our user-friendly website,
+                Quapri.in, offers a convenient and efficient way to do so.
+                Alternatively, our dedicated teams are readily available to
+                assist you with any inquiries or specific requirements you may
+                have. Whether you need assistance with your order or have
+                questions about our services, don't hesitate to get in touch
+                with our knowledgeable and responsive teams. Your satisfaction
+                and the success of your projects are our top priorities.
               </div>
             </Col>
           </Row>
