@@ -78,7 +78,7 @@ export const promoCarousel = {
 
 export const servicesCarousel = {
   classVal: "bgWhiteMarginHigh",
-  noOfSlideOnDesktop: 9,
+  noOfSlideOnDesktop: 6,
   list: [
     {
       id: "servicesCarouselItem1",

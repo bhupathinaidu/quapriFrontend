@@ -39,6 +39,7 @@
 
 .bgWhiteMarginHigh .listItem img {
     width: 100%;
+    border-radius: 50%;
 }
 
 .bgWhiteMarginNormal .listItem img {

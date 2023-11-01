@@ -33,7 +33,6 @@ const Footer = () => {
           <div className="list-group">
             <Link to="#">Help</Link>
             <Link to="#">Business Pricing</Link>
-            <Link to="#">Find Stores</Link>
             <Link to="#">My Account</Link>
             <Link to="#">Track Order</Link>
           </div>
@@ -89,7 +88,7 @@ const Footer = () => {
       <Row className="secondaryFooter">
         <Col>
           <p>
-            <span>©</span>2023 Quapri Services Pvt. Ltd. All Rights Reserved.
+            <span>©</span>2023 Quapri. All Rights Reserved.
           </p>
         </Col>
       </Row>
