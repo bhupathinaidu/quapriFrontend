@@ -65,11 +65,7 @@ const ProductListingComponent = ({ properties }) => {
                 <p className="productPrice">{item.name}</p>
                 <p className="productName">
                   {"₹" +
-                    (
-                      <span>
-                        item.price[Object.keys(item.price)[0]].toFixed(2)
-                      </span>
-                    ) +
+                    item.price[Object.keys(item.price)[0]].toFixed(2) +
                     " per " +
                     Object.keys(item.price)[0]}
                 </p>
