@@ -51,6 +51,14 @@
     }
 
     .bgWhiteMarginHigh .listItem img {
-        width: 190px;
+        width: 100%;
+    }
+
+    .bgWhiteMarginNormal .listItem img {
+        width: 100%;
+    }
+
+    .bgViolet .listItem img {
+        width: 100%;
     }
 }

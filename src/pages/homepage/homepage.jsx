@@ -110,7 +110,7 @@ const HomePage = () => {
                 Quapri's diverse packaging offerings, you can position your
                 business for success by making the right packaging choices.
               </div>
-              <button className="btn btn-primary mt-3">Read More</button>
+              <button className="btn btn-primary mt-3 my-3">Read More</button>
             </Col>
             <Col md={5} className="px-0 px-md-3">
               <div className="packageImg">
