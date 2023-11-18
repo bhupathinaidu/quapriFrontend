@@ -1,20 +1,20 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { loginSignUpApi } from "../../api/loginSignUp.api";
 
-export const fetchUser = createAsyncThunk(
-  "login/getUserDetail",
-  async (userDetail) => {
-    console.log({ userDetail });
-    const response = await loginSignUpApi.login(
-      userDetail.username,
-      userDetail.password
+export const fetchNewUser = createAsyncThunk(
+  "signup/getNewUserDetail",
+  async (newUserDetail) => {
+    console.log({ newUserDetail });
+    const response = await loginSignUpApi.signup(
+      newUserDetail.name,
+      newUserDetail.email,
+      newUserDetail.password,
+      newUserDetail.passwordConfirm
     );
-    console.log(response, "res");
+    console.log(response, "response");
     return response.data;
   }
 );
-
-console.log(fetchUser({ username: "test@test", password: "llll" }));
 
 const initialState = {
   user: "",
@@ -22,23 +22,23 @@ const initialState = {
   isError: false,
 };
 
-const loginSlice = createSlice({
-  name: "login",
+const signupSlice = createSlice({
+  name: "signup",
   initialState,
   reducers: {
     // standard reducer logic, with auto-generated action types per reducer
   },
   extraReducers: (builder) => {
     // Add reducers for additional action types here, and handle loading state as needed
-    builder.addCase(fetchUser.pending, (state, action) => {
+    builder.addCase(fetchNewUser.pending, (state, action) => {
       state.isLoading = true;
     });
-    builder.addCase(fetchUser.fulfilled, (state, action) => {
+    builder.addCase(fetchNewUser.fulfilled, (state, action) => {
       state.isLoading = false;
       state.user = action.payload;
       if (!action.payload) state.isError = true;
     });
-    builder.addCase(fetchUser.rejected, (state, action) => {
+    builder.addCase(fetchNewUser.rejected, (state, action) => {
       console.log("rejected");
       state.isLoading = false;
       state.isError = true;
@@ -48,4 +48,4 @@ const loginSlice = createSlice({
 
 export const user = (state) => state.user;
 
-export const loginReducer = loginSlice.reducer;
+export const signupReducer = signupSlice.reducer;

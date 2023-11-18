@@ -154,7 +154,7 @@ const HomePage = () => {
               </div>
               <div className="pt-3">
                 Based in Bangalore, India, our cutting-edge production facility
-                spans over 10,000 square feet, enabling us to provide
+                spans over 20,000 square feet, enabling us to provide
                 high-quality products. You can easily make orders on our
                 website, Quapri.in, or reach out to our dedicated teams for
                 assistance.
@@ -162,7 +162,7 @@ const HomePage = () => {
               <div className="pt-3 py-3">
                 Our headquarters are located in Bangalore, India, and we take
                 pride in our modern production facility that covers more than
-                10,000 square feet. This advanced facility equips us with the
+                20,000 square feet. This advanced facility equips us with the
                 capabilities to produce and deliver top-quality products. If
                 you're looking to place orders, our user-friendly website,
                 Quapri.in, offers a convenient and efficient way to do so.
