@@ -4,7 +4,7 @@ import { loginSignUpApi } from "../../api/loginSignUp.api";
 export const fetchNewUser = createAsyncThunk(
   "signup/getNewUserDetail",
   async (newUserDetail) => {
-    console.log({ newUserDetail });
+    // console.log({ newUserDetail });
     const response = await loginSignUpApi.signup(
       newUserDetail.name,
       newUserDetail.email,

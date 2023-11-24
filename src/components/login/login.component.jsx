@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
@@ -6,8 +6,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./login.component.css";
 import Signup from "../signUp/signup.component";
-import { useDispatch } from "react-redux";
-import { fetchUser } from "../../store/login/login.reducer";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchUser, user } from "../../store/login/login.reducer";
 
 function Login(props) {
   const [signupModalShow, setSignupModalShow] = useState(false);
@@ -17,10 +17,24 @@ function Login(props) {
   });
   const dispatch = useDispatch();
 
+  const userData = useSelector(user);
+  useEffect(() => {
+    console.log({ userData });
+  }, [userData]);
+
   const closeModal = () => {
     setSignupModalShow(true);
     props.onHide(false);
   };
+
+  function areAllValuesTruthy(obj) {
+    for (var key in obj) {
+      if (!obj[key]) {
+        return false;
+      }
+    }
+    return true;
+  }
 
   const handleClick = () => {
     dispatch(
@@ -29,7 +43,9 @@ function Login(props) {
         password: loginDetails.password,
       })
     );
-    console.log({ loginDetails });
+    if (areAllValuesTruthy(loginDetails) && userData?.isError === false) {
+      props.onHide(false);
+    }
   };
 
   const handleChange = (name, val) => {
@@ -49,6 +65,13 @@ function Login(props) {
         </Modal.Header>
         <Modal.Body>
           <Form onSubmit={(e) => e.preventDefault()}>
+            {userData?.isError === true ? (
+              <span style={{ fontSize: "12px", color: "red" }}>
+                Please fill correct details
+              </span>
+            ) : (
+              <span></span>
+            )}
             <Form.Group className="mb-3" controlId="formBasicLoginEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control
