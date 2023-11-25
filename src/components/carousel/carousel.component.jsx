@@ -29,7 +29,7 @@ const CarouselComponent = ({ properties }) => {
       {properties.list.map((item) => (
         <Link to={item.src} key={item.id}>
           <div className="listItem">
-            <img src={item.imgSrc} alt={item.id} />
+            <img src={item.imgSrc} alt={item.label} />
             <p>{item.label}</p>
           </div>
         </Link>
