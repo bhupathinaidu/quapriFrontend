@@ -4,7 +4,7 @@ import { loginSignUpApi } from "../../api/loginSignUp.api";
 export const fetchUser = createAsyncThunk(
   "login/getUserDetail",
   async (userDetail) => {
-    console.log({ userDetail });
+    // console.log({ userDetail });
     const response = await loginSignUpApi.login(
       userDetail.username,
       userDetail.password
@@ -14,10 +14,10 @@ export const fetchUser = createAsyncThunk(
   }
 );
 
-console.log(fetchUser({ username: "test@test", password: "llll" }));
+// console.log(fetchUser({ username: "test@test", password: "llll" }));
 
 const initialState = {
-  user: "",
+  user: {},
   isLoading: false,
   isError: false,
 };

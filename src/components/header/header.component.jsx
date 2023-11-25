@@ -16,7 +16,7 @@ const HeaderComponent = () => {
   const userData = useSelector(user);
 
   useEffect(() => {
-    console.log({ userData });
+    // console.log({ userData });
   }, [userData]);
   return (
     <>
@@ -52,11 +52,20 @@ const HeaderComponent = () => {
                 </span>
               </li>
               <li>
-                <span
+                <span className="loginSignup nav-link">
+                  {userData?.user?.user ? (
+                    userData?.user?.user.name
+                  ) : (
+                    <span onClick={() => setLoginModalShow(true)}>
+                      <i className="fa fa-sign-in"></i>Login
+                    </span>
+                  )}
+                </span>
+                {/* <span
                   className="loginSignup nav-link"
                   onClick={() => setLoginModalShow(true)}>
                   <i className="fa fa-sign-in"></i>Login
-                </span>
+                </span> */}
               </li>
               <li>
                 <span className="cartDesktop nav-link">
