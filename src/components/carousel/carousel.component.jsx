@@ -3,7 +3,7 @@ import "react-multi-carousel/lib/styles.css";
 import "./carousel.component.css";
 import { Link } from "react-router-dom";
 
-const CarouselComponent = ({ properties }) => {
+const CarouselComponent = ({ properties, isAutoPlay }) => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -23,9 +23,9 @@ const CarouselComponent = ({ properties }) => {
       partialVisibilityGutter: 10,
     },
   };
-
+  
   return (
-    <Carousel responsive={responsive} containerClass={properties.classVal}>
+    <Carousel responsive={responsive} autoPlay={isAutoPlay} infinite={isAutoPlay} containerClass={properties.classVal}>
       {properties.list.map((item) => (
         <Link to={item.src} key={item.id}>
           <div className="listItem">

@@ -29,7 +29,7 @@ const HomePage = () => {
     <div className="App">
       <header className="App-header">
         <CarouselComponent properties={promoCarousel} />
-        <CarouselComponent properties={servicesCarousel} />
+        <CarouselComponent properties={servicesCarousel} isAutoPlay={true} />
         <div className="popularProductsConatiner">
           <ProductHeadingComponent heading="Popular Products" />
           <div className="popularProducts">
