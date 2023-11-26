@@ -57,6 +57,7 @@ import ProductDetailComponent from "./components/productDetail/product.detail.co
 import ScrollToTopComponent from "./components/scrollToTop/scrollToTop.component";
 import MasterProductList from "./components/masterProductList/masterProduct.component";
 import { masterList } from "./commom/masterCategoryList.constant";
+import Cart from "./pages/cart/cart";
 
 function App() {
   return (
@@ -346,7 +347,8 @@ function App() {
           element={
             <ProductListingComponent properties={accessoriesProps} />
           }></Route>
-        <Route path="/add-to-cart" element={<h1>Add to cart Page</h1>}></Route>
+        {/* <Route path="/add-to-cart" element={<h1>Add to cart Page</h1>}></Route> */}
+        <Route path="/add-to-cart" element={<Cart />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>

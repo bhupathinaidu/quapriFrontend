@@ -1,0 +1,79 @@
+.cart-items {
+    border: 1px solid #b3b3b3;
+}
+
+.quapriCart-card {
+    padding: 20px;
+}
+
+.cartProduct-img {
+    margin-right: 15px;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.cartProduct-img img {
+    width: 100%;
+}
+
+.cartProduct-desc {
+    flex: 1 1 0%;
+}
+
+.productName, .summary-heading {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.productQuantity .label, .product-label, .summary-details .label {
+    color: #cbcbcb;
+}
+
+.productSpec {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.product-label, .product-desc {
+    flex: 1 1 0%;
+}
+
+.cart-summary {
+    border: 1px solid #b3b3b3;
+    padding: 10px;
+}
+
+.summary-heading {
+    background-color: #e9e3e3;
+    padding: 10px;
+}
+
+.summary-heading {
+    background-color: #faaa19;
+    padding: 10px;
+    margin: -10px -26px;
+    color: #fff;
+}
+
+.productTotal {
+    border-top: 2px solid #b3b3b3;
+}
+
+.item-total {
+    margin-top: 10px;
+    border-top: 1px solid #b3b3b3;
+    padding-top: 10px;
+}
+
+.item-total .total, .item-total .price {
+    font-weight: 500;
+}
+
+.checkoutBtn button {
+    background-color: #faaa19;
+    width: 100%;
+    border: 1px solid #b3b3b3;
+    padding: 5px 0;
+    border-radius: 3px;
+    color: #fff;
+}
