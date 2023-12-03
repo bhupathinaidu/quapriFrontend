@@ -19,10 +19,10 @@ const MasterProductList = ({ masterList, category }) => {
       <div className="row">
         {masterList.map((item) => (
           <>
-            <div className="col-md-3 masterListProduct">
+            <div className="col-md-3 masterListProduct" key={item.label}>
               <Link to={item.src}>
                 <div>
-                  <img src={item.imgSrc} />
+                  <img src={item.imgSrc} alt={item.label} />
                 </div>
                 <div>{item.label}</div>
               </Link>

@@ -48,7 +48,9 @@ function Signup(props) {
         aria-labelledby="contained-modal-title-vcenter"
         id="signup-modal"
         centered>
-        <Modal.Header closeButton>
+        <Modal.Header
+          closeButton
+          style={{ backgroundColor: "#faaa19", color: "#fff" }}>
           <Modal.Title id="contained-modal-title">Sign Up</Modal.Title>
         </Modal.Header>
         <Modal.Body>

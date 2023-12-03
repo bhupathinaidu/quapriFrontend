@@ -60,7 +60,9 @@ function Login(props) {
         aria-labelledby="contained-modal-title-vcenter"
         id="login-modal"
         centered>
-        <Modal.Header closeButton>
+        <Modal.Header
+          closeButton
+          style={{ backgroundColor: "#faaa19", color: "#fff" }}>
           <Modal.Title id="contained-modal-title">Log In</Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -103,8 +105,9 @@ function Login(props) {
               </Col>
               <Col md={6} className="py-3 px-0">
                 <div
-                  className="btn btn-warning btn-block px-5 signUpButton"
-                  onClick={closeModal}>
+                  className="btn btn-block px-5 signUpButton"
+                  onClick={closeModal}
+                  style={{ backgroundColor: "#faaa19" }}>
                   <i className="fa fa-user"></i> Sign Up
                 </div>
               </Col>
