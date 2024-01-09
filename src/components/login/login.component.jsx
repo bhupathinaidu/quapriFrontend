@@ -18,8 +18,15 @@ function Login(props) {
   const dispatch = useDispatch();
 
   const userData = useSelector(user);
+
   useEffect(() => {
-    console.log({ userData });
+    if (
+      areAllValuesTruthy(loginDetails) &&
+      userData?.isError === false &&
+      userData.user?.user?.email
+    ) {
+      props.onHide(false);
+    }
   }, [userData]);
 
   const closeModal = () => {
@@ -43,9 +50,6 @@ function Login(props) {
         password: loginDetails.password,
       })
     );
-    if (areAllValuesTruthy(loginDetails) && userData?.isError === false) {
-      props.onHide(false);
-    }
   };
 
   const handleChange = (name, val) => {

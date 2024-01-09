@@ -8,16 +8,23 @@ import Navbar from "react-bootstrap/Navbar";
 import Login from "../login/login.component";
 import NavbarComponent from "../navbar/navbar.component";
 import ServiceNavbarComponent from "../servicesNav/servicesNav.component";
-import { useSelector } from "react-redux";
-import { user } from "../../store/login/login.reducer";
+import { useSelector, useDispatch } from "react-redux";
+import { user, setLoginUser } from "../../store/login/login.reducer";
 
 const HeaderComponent = () => {
   const [loginModalShow, setLoginModalShow] = useState(false);
   const userData = useSelector(user);
 
+  const dispatch = useDispatch();
+
   useEffect(() => {
-    // console.log({ userData });
+    console.log({ userData });
   }, [userData]);
+
+  useEffect(() => {
+    dispatch(setLoginUser({ email: "test" }));
+  }, []);
+
   return (
     <>
       <NavbarComponent />

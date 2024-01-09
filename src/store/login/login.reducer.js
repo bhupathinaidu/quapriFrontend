@@ -4,7 +4,6 @@ import { loginSignUpApi } from "../../api/loginSignUp.api";
 export const fetchUser = createAsyncThunk(
   "login/getUserDetail",
   async (userDetail) => {
-    // console.log({ userDetail });
     const response = await loginSignUpApi.login(
       userDetail.username,
       userDetail.password
@@ -13,8 +12,6 @@ export const fetchUser = createAsyncThunk(
     return response.data;
   }
 );
-
-// console.log(fetchUser({ username: "test@test", password: "llll" }));
 
 const initialState = {
   user: {},
@@ -26,7 +23,10 @@ const loginSlice = createSlice({
   name: "login",
   initialState,
   reducers: {
-    // standard reducer logic, with auto-generated action types per reducer
+    setLoginUser: (state, action) => {
+      console.log(action.payload, "esfghg");
+      state.user = action.payload;
+    },
   },
   extraReducers: (builder) => {
     // Add reducers for additional action types here, and handle loading state as needed
@@ -36,6 +36,7 @@ const loginSlice = createSlice({
     builder.addCase(fetchUser.fulfilled, (state, action) => {
       state.isLoading = false;
       state.user = action.payload;
+      state.isError = false;
       if (!action.payload) state.isError = true;
     });
     builder.addCase(fetchUser.rejected, (state, action) => {
@@ -45,6 +46,8 @@ const loginSlice = createSlice({
     });
   },
 });
+
+export const { setLoginUser } = loginSlice.actions;
 
 export const user = (state) => state.user;
 

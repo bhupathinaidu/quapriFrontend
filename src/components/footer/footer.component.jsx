@@ -55,7 +55,7 @@ const Footer = () => {
           <div className="d-flex align-items-center mt-2">
             <i className="fa fa-envelope"></i>
             <span className="ms-3">
-              <Link to="mailto:info@quapri.com">info@quapri.com</Link>
+              <Link to="mailto:info@quapri.in">info@quapri.in</Link>
             </span>
           </div>
           <div className="mt-3">

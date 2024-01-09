@@ -4,7 +4,6 @@ import { loginSignUpApi } from "../../api/loginSignUp.api";
 export const fetchNewUser = createAsyncThunk(
   "signup/getNewUserDetail",
   async (newUserDetail) => {
-    // console.log({ newUserDetail });
     const response = await loginSignUpApi.signup(
       newUserDetail.name,
       newUserDetail.email,
@@ -36,6 +35,7 @@ const signupSlice = createSlice({
     builder.addCase(fetchNewUser.fulfilled, (state, action) => {
       state.isLoading = false;
       state.user = action.payload;
+      state.isError = false;
       if (!action.payload) state.isError = true;
     });
     builder.addCase(fetchNewUser.rejected, (state, action) => {
